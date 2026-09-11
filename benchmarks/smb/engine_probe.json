@@ -1,0 +1,48 @@
+{
+  "schema_version": 3,
+  "seeds": {
+    "test": [
+      1001,
+      1002,
+      1003
+    ]
+  },
+  "specs": [
+    {
+      "config": "configs/smb.yaml",
+      "game": "smb",
+      "id": "smb-test-01",
+      "split": "test",
+      "targets": {
+        "coins": 3,
+        "complete": 1.0,
+        "enemies": 3,
+        "jumps": 5
+      }
+    },
+    {
+      "config": "configs/smb.yaml",
+      "game": "smb",
+      "id": "smb-test-02",
+      "split": "test",
+      "targets": {
+        "coins": 4,
+        "complete": 1.0,
+        "enemies": 2,
+        "jumps": 4
+      }
+    },
+    {
+      "config": "configs/smb.yaml",
+      "game": "smb",
+      "id": "smb-test-03",
+      "split": "test",
+      "targets": {
+        "coins": 2,
+        "complete": 1.0,
+        "enemies": 4,
+        "jumps": 6
+      }
+    }
+  ]
+}

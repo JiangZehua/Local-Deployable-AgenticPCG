@@ -1,0 +1,262 @@
+{
+  "manifest_id": "PAPER-M6-NATURAL32-v1",
+  "schema_version": "paper-m6-natural32.v1",
+  "status": "frozen_before_generation",
+  "split": "natural32",
+  "model": "Qwen/Qwen3.8-27B",
+  "model_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "authoring_protocol": "Naturalistic requests were drafted independently for this evaluation and checked against the prior 12-template bank for exact-string and long-substring reuse. They are not claimed to be human-authored or population representative.",
+  "claim_boundary": "Tests bounded bilingual translation of naturalistic SMB playthrough requests into an existing typed functional contract and certified resolver. It does not test arbitrary language, new mechanics, or human preference alignment.",
+  "valid_target_cases": 24,
+  "guard_cases": 8,
+  "cases": [
+    {
+      "case_id": "natural-en-01",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-06-k0-c5-j3",
+      "language": "en",
+      "instruction": "Mario can leave every enemy alone, but before the flag he should pocket five coins and make three deliberate jumps from the ground.",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 0}, "coins": {"relation": "exact", "value": 5}, "jumps": {"relation": "exact", "value": 3}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-en-02",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-10-k1-c2-j1",
+      "language": "en",
+      "instruction": "Keep the run brief: take down one foe, pick up two coins, and leave the floor for a jump only once.",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 1}, "coins": {"relation": "exact", "value": 2}, "jumps": {"relation": "exact", "value": 1}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-en-03",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-21-k2-c2-j2",
+      "language": "en",
+      "instruction": "By the time Mario finishes, the play log should show a pair of defeated enemies, a pair of collected coins, and two ground-initiated jumps.",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 2}, "coins": {"relation": "exact", "value": 2}, "jumps": {"relation": "exact", "value": 2}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-en-04",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-27-k3-c5-j0",
+      "language": "en",
+      "instruction": "I want an action-heavy route with three enemy defeats and five coins actually gathered, yet no counted jump at all.",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 3}, "coins": {"relation": "exact", "value": 5}, "jumps": {"relation": "exact", "value": 0}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-en-05",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-04-k0-c4-j2",
+      "language": "en",
+      "instruction": "Let Mario avoid combat. The successful playthrough should still gather four coins and contain exactly two takeoffs from solid ground.",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 0}, "coins": {"relation": "exact", "value": 4}, "jumps": {"relation": "exact", "value": 2}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-en-06",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-14-k1-c4-j3",
+      "language": "en",
+      "instruction": "The finish-line tally I need is four coins in hand, three ground jumps, and just one enemy eliminated.",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 1}, "coins": {"relation": "exact", "value": 4}, "jumps": {"relation": "exact", "value": 3}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-en-07",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-17-k2-c0-j0",
+      "language": "en",
+      "instruction": "Build a route where Mario defeats two enemies without collecting a coin or registering a voluntary ground jump.",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 2}, "coins": {"relation": "exact", "value": 0}, "jumps": {"relation": "exact", "value": 0}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-en-08",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-28-k3-c5-j1",
+      "language": "en",
+      "instruction": "One jump should be enough; around it, arrange the playable path so all five coins are collected and three enemies are beaten.",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 3}, "coins": {"relation": "exact", "value": 5}, "jumps": {"relation": "exact", "value": 1}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-en-09",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-01-k0-c2-j1",
+      "language": "en",
+      "instruction": "No stomping this time. Please make the completed attempt include two coin pickups and one jump launched from the ground.",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 0}, "coins": {"relation": "exact", "value": 2}, "jumps": {"relation": "exact", "value": 1}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-en-10",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-23-k2-c3-j3",
+      "language": "en",
+      "instruction": "When replayed by the agent, the level needs to yield three jumps, three collected coins, and two kills—none of those are tile counts.",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 2}, "coins": {"relation": "exact", "value": 3}, "jumps": {"relation": "exact", "value": 3}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-en-11",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-08-k1-c0-j4",
+      "language": "en",
+      "instruction": "Give Mario a four-jump route with one defeated enemy, while every coin stays uncollected.",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 1}, "coins": {"relation": "exact", "value": 0}, "jumps": {"relation": "exact", "value": 4}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-en-12",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-26-k3-c4-j0",
+      "language": "en",
+      "instruction": "Make the winning trajectory collect four coins and clear three enemies without Mario ever initiating a ground jump.",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 3}, "coins": {"relation": "exact", "value": 4}, "jumps": {"relation": "exact", "value": 0}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-zh-13",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-05-k0-c4-j3",
+      "language": "zh",
+      "instruction": "这关别让 Mario 跟敌人交手；通关路上把四枚金币都拿到，并从地面起跳三回。",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 0}, "coins": {"relation": "exact", "value": 4}, "jumps": {"relation": "exact", "value": 3}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-zh-14",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-09-k1-c1-j0",
+      "language": "zh",
+      "instruction": "我想要一条不用跳的通关路线，途中只解决一个敌人，也只捡一枚金币。",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 1}, "coins": {"relation": "exact", "value": 1}, "jumps": {"relation": "exact", "value": 0}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-zh-15",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-20-k2-c2-j1",
+      "language": "zh",
+      "instruction": "最后的游玩记录请做成：消灭两个敌人、实收两枚金币，地面起跳仅一次。",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 2}, "coins": {"relation": "exact", "value": 2}, "jumps": {"relation": "exact", "value": 1}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-zh-16",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-25-k3-c0-j1",
+      "language": "zh",
+      "instruction": "安排一次只跳一回的闯关，Mario 要击败三个敌人，但不要把任何金币收入囊中。",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 3}, "coins": {"relation": "exact", "value": 0}, "jumps": {"relation": "exact", "value": 1}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-zh-17",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-00-k0-c0-j5",
+      "language": "zh",
+      "instruction": "敌人和金币都可以绕开，不过 Mario 必须确实从地面跳起五次再抵达终点。",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 0}, "coins": {"relation": "exact", "value": 0}, "jumps": {"relation": "exact", "value": 5}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-zh-18",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-13-k1-c4-j2",
+      "language": "zh",
+      "instruction": "通关时我只看实际发生的事件：打掉一只怪，拿走四个金币，主动跳两次。",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 1}, "coins": {"relation": "exact", "value": 4}, "jumps": {"relation": "exact", "value": 2}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-zh-19",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-18-k2-c1-j0",
+      "language": "zh",
+      "instruction": "不要设计需要起跳的路线；让模拟玩家消灭两个敌人，顺手收下一枚金币即可。",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 2}, "coins": {"relation": "exact", "value": 1}, "jumps": {"relation": "exact", "value": 0}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-zh-20",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-28-k3-c5-j1",
+      "language": "zh",
+      "instruction": "整段流程只能有一次地面起跳，同时要清掉三名敌人，并把五枚金币全部真正收集。",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 3}, "coins": {"relation": "exact", "value": 5}, "jumps": {"relation": "exact", "value": 1}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-zh-21",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-03-k0-c3-j2",
+      "language": "zh",
+      "instruction": "可以完全避战；我只要求实际捡到三枚金币，而且脚离开地面起跳正好两次。",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 0}, "coins": {"relation": "exact", "value": 3}, "jumps": {"relation": "exact", "value": 2}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-zh-22",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-15-k1-c5-j3",
+      "language": "zh",
+      "instruction": "把终局数据控制为五枚已收金币、三次主动跳跃，以及恰好一次击杀。",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 1}, "coins": {"relation": "exact", "value": 5}, "jumps": {"relation": "exact", "value": 3}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-mix-23",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-22-k2-c3-j2",
+      "language": "mixed",
+      "instruction": "按 gameplay log 算：two enemies defeated，金币实收三枚，ground jump 发生两次。",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 2}, "coins": {"relation": "exact", "value": 3}, "jumps": {"relation": "exact", "value": 2}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-mix-24",
+      "role": "valid_target",
+      "source_case_id": "smb-validation-16-k1-c5-j4",
+      "language": "mixed",
+      "instruction": "Mario 最终只 kill one enemy；另外 collect five coins，并完成 four 次从地面起跳。",
+      "expected": {"status": "resolved", "domain": "smb_dynamic", "constraints": {"enemies": {"relation": "exact", "value": 1}, "coins": {"relation": "exact", "value": 5}, "jumps": {"relation": "exact", "value": 4}}, "objectives": []}
+    },
+    {
+      "case_id": "natural-guard-vague",
+      "role": "guard",
+      "language": "en",
+      "instruction": "Let Mario grab a few coins, beat some enemies, and jump whenever it feels natural.",
+      "expected": {"status": "needs_clarification", "domain": "smb_dynamic"}
+    },
+    {
+      "case_id": "natural-guard-conflict",
+      "role": "guard",
+      "language": "en",
+      "instruction": "The final run must collect exactly two coins, but it must also finish with exactly four collected coins.",
+      "expected": {"status": "needs_clarification", "domain": "smb_dynamic"}
+    },
+    {
+      "case_id": "natural-guard-outside",
+      "role": "guard",
+      "language": "en",
+      "instruction": "During one run, defeat eight enemies, collect one coin, and make two ground jumps.",
+      "expected": {"status": "unsupported", "domain": "smb_dynamic"}
+    },
+    {
+      "case_id": "natural-guard-other-game",
+      "role": "guard",
+      "language": "en",
+      "instruction": "Build a Zelda dungeon where the hero finds two keys before opening a locked door.",
+      "expected": {"status": "unsupported", "domain": "unknown"}
+    },
+    {
+      "case_id": "natural-guard-mixed-semantics",
+      "role": "guard",
+      "language": "en",
+      "instruction": "Put three coin tiles in the file and have Mario collect two coins; use whichever count is more convenient.",
+      "expected": {"status": "needs_clarification", "domain": "smb_dynamic"}
+    },
+    {
+      "case_id": "natural-guard-no-target",
+      "role": "guard",
+      "language": "zh",
+      "instruction": "做一张节奏舒服、难度适中的马里奥关卡，玩起来有趣就行。",
+      "expected": {"status": "needs_clarification", "domain": "smb_dynamic"}
+    },
+    {
+      "case_id": "natural-guard-approximate",
+      "role": "guard",
+      "language": "zh",
+      "instruction": "大概消灭两个敌人，金币捡三四枚，跳跃次数别太多。",
+      "expected": {"status": "needs_clarification", "domain": "smb_dynamic"}
+    },
+    {
+      "case_id": "natural-guard-conditional",
+      "role": "guard",
+      "language": "zh",
+      "instruction": "如果前面拿到金币就跳两次，否则跳四次；击杀一个敌人。",
+      "expected": {"status": "needs_clarification", "domain": "smb_dynamic"}
+    }
+  ]
+}

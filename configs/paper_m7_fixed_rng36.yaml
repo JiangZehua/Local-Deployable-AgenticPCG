@@ -1,0 +1,210 @@
+schema_version: paper-m7-fixed-rng36.v1
+manifest_id: PAPER-M7-FIXED-RNG36-v1
+status: frozen_before_generation
+model: Qwen/Qwen3.8-27B
+model_revision: 1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
+map_size: [32, 32]
+max_steps: 8
+claim_boundary: >-
+  Confound-correction rerun of the existing 18-request routing suite. Within
+  each intent family, all three paraphrases share the same initial map and the
+  same request/tool RNG seed; paired arms share them as well. This isolates
+  wording sensitivity from geometry randomness, but does not create a new
+  held-out language set or test arbitrary scene semantics.
+rng_contract: >-
+  The task seed is supplied to main.py for OpenAI-compatible request sampling.
+  Before each fresh arm process, the seeded-entrypoint wrapper also seeds
+  Python random and NumPy random with that same value, covering stochastic
+  acceptance and PCG macro implementations. The value is identical across all
+  three paraphrases within a family and across the all_tools/manual_only pair.
+  Temperature remains zero.
+arms:
+  all_tools: {config: configs/zelda_pcg_tools_32x32_all.yaml}
+  manual_only: {config: configs/zelda_pcg_tools_32x32_manual.yaml}
+default_initial: configs/high_level_freeform_zelda_initial_32x32.txt
+tasks:
+  - task_id: rooms-p1
+    family_id: many_rooms
+    paraphrase_id: p1
+    seed: 6201
+    instruction: >-
+      Replace the open field with at least five distinct rectangular chambers
+      linked by narrow passages. Preserve exactly one player, key, and door and
+      three enemies, and keep every entity reachable.
+    expected_sequence: [generate_zelda_bsp]
+    outcome_constraints: {functional_valid: {eq: true}, detected_rooms: {min: 5}}
+  - task_id: rooms-p2
+    family_id: many_rooms
+    paraphrase_id: p2
+    seed: 6201
+    instruction: >-
+      I want a dungeon made from numerous box-shaped rooms with slim corridors
+      between them, not one large open arena. Do not lose or isolate any Zelda
+      entity.
+    expected_sequence: [generate_zelda_bsp]
+    outcome_constraints: {functional_valid: {eq: true}, detected_rooms: {min: 5}}
+  - task_id: rooms-p3
+    family_id: many_rooms
+    paraphrase_id: p3
+    seed: 6201
+    instruction: >-
+      把空旷地图改成至少五个彼此分明的矩形房间，用较窄的走廊连接；保留一个玩家、
+      一把钥匙、一扇门和三个敌人，并保证它们全部可达。
+    expected_sequence: [generate_zelda_bsp]
+    outcome_constraints: {functional_valid: {eq: true}, detected_rooms: {min: 5}}
+
+  - task_id: organic-p1
+    family_id: organic_digger_cave
+    paraphrase_id: p1
+    seed: 6301
+    instruction: >-
+      Turn this field into one connected underground cave with irregular
+      winding tunnels and occasional broad pockets. Avoid a rectangular room
+      grid and keep every entity on the playable component.
+    expected_sequence: [generate_zelda_digger]
+    outcome_constraints: {functional_valid: {eq: true}, interior_wall_density: {min: 0.30, max: 0.85}}
+  - task_id: organic-p2
+    family_id: organic_digger_cave
+    paraphrase_id: p2
+    seed: 6301
+    instruction: >-
+      Shape a natural-looking cavern: mostly tight, meandering passages with a
+      few wider chambers, all belonging to one traversable cave. Preserve and
+      connect the player, key, door, and enemies.
+    expected_sequence: [generate_zelda_digger]
+    outcome_constraints: {functional_valid: {eq: true}, interior_wall_density: {min: 0.30, max: 0.85}}
+  - task_id: organic-p3
+    family_id: organic_digger_cave
+    paraphrase_id: p3
+    seed: 6301
+    instruction: >-
+      做成自然形成的地下洞穴：通道弯曲、不规则，间或出现较宽的洞室，但整体必须连通，
+      所有角色、钥匙和门都要留在可游玩区域里。
+    expected_sequence: [generate_zelda_digger]
+    outcome_constraints: {functional_valid: {eq: true}, interior_wall_density: {min: 0.30, max: 0.85}}
+
+  - task_id: smooth-p1
+    family_id: smoothed_cellular_cave
+    paraphrase_id: p1
+    seed: 6401
+    instruction: >-
+      Begin from noisy scattered walls, smooth the speckles into rounded cave
+      masses, then join the walkable pockets into one region. Keep all six
+      special entities intact and reachable.
+    expected_sequence: [generate_zelda_random, generate_zelda_ca, generate_zelda_connect]
+    outcome_constraints: {functional_valid: {eq: true}, interior_wall_density: {min: 0.15, max: 0.80}}
+  - task_id: smooth-p2
+    family_id: smoothed_cellular_cave
+    paraphrase_id: p2
+    seed: 6401
+    instruction: >-
+      Make an organic cave by first adding rough visual noise, then rounding
+      away isolated flecks and finally connecting every open pocket. The
+      player-to-key-to-door route must remain valid.
+    expected_sequence: [generate_zelda_random, generate_zelda_ca, generate_zelda_connect]
+    outcome_constraints: {functional_valid: {eq: true}, interior_wall_density: {min: 0.15, max: 0.80}}
+  - task_id: smooth-p3
+    family_id: smoothed_cellular_cave
+    paraphrase_id: p3
+    seed: 6401
+    instruction: >-
+      先制造带噪声的墙体分布，再把零散尖锐的小块平滑成圆润洞穴，最后把所有开放区域
+      连成一片；玩家、钥匙、门和三个敌人必须保留且可达。
+    expected_sequence: [generate_zelda_random, generate_zelda_ca, generate_zelda_connect]
+    outcome_constraints: {functional_valid: {eq: true}, interior_wall_density: {min: 0.15, max: 0.80}}
+
+  - task_id: maze-p1
+    family_id: perfect_dense_maze
+    paraphrase_id: p1
+    seed: 6501
+    instruction: >-
+      Replace the open field with a dense orderly maze of narrow passages.
+      Build enough wall mass to carve through, and retain valid paths from the
+      player to the key and then the door.
+    expected_sequence: [generate_zelda_random, generate_zelda_maze]
+    outcome_constraints: {functional_valid: {eq: true}, interior_wall_density: {min: 0.25}, transition_density: {min: 0.15}}
+  - task_id: maze-p2
+    family_id: perfect_dense_maze
+    paraphrase_id: p2
+    seed: 6501
+    instruction: >-
+      I need a highly structured labyrinth with thin twisting corridors rather
+      than open rooms. Start with a broad solid field, carve the passage
+      network, and keep every required route playable.
+    expected_sequence: [generate_zelda_random, generate_zelda_maze]
+    outcome_constraints: {functional_valid: {eq: true}, interior_wall_density: {min: 0.25}, transition_density: {min: 0.15}}
+  - task_id: maze-p3
+    family_id: perfect_dense_maze
+    paraphrase_id: p3
+    seed: 6501
+    instruction: >-
+      请把空地改成密集而规则的迷宫，主要由狭窄曲折的通道组成；先形成足够的墙体再开辟
+      通路，同时保证玩家到钥匙再到门的路线有效。
+    expected_sequence: [generate_zelda_random, generate_zelda_maze]
+    outcome_constraints: {functional_valid: {eq: true}, interior_wall_density: {min: 0.25}, transition_density: {min: 0.15}}
+
+  - task_id: pattern-p1
+    family_id: repeating_local_pattern
+    paraphrase_id: p1
+    seed: 6601
+    instruction: >-
+      Fill the dungeon with a coherent repeating vocabulary of local wall and
+      corridor motifs instead of drawing every segment independently. The
+      resulting maze-like layout must remain playable.
+    expected_sequence: [generate_zelda_wfc]
+    outcome_constraints: {functional_valid: {eq: true}, transition_density: {min: 0.12}}
+  - task_id: pattern-p2
+    family_id: repeating_local_pattern
+    paraphrase_id: p2
+    seed: 6601
+    instruction: >-
+      Create a regular maze-like board whose small neighborhood patterns recur
+      consistently across the map. Preserve all entities and one connected
+      player-to-key-to-door solution.
+    expected_sequence: [generate_zelda_wfc]
+    outcome_constraints: {functional_valid: {eq: true}, transition_density: {min: 0.12}}
+  - task_id: pattern-p3
+    family_id: repeating_local_pattern
+    paraphrase_id: p3
+    seed: 6601
+    instruction: >-
+      生成一张局部墙面纹样反复出现、整体风格统一的迷宫式地图，不要逐块随意拼接；
+      保留所有实体，并维持一条连通的玩家—钥匙—门路线。
+    expected_sequence: [generate_zelda_wfc]
+    outcome_constraints: {functional_valid: {eq: true}, transition_density: {min: 0.12}}
+
+  - task_id: reconnect-p1
+    family_id: reconnect_regions
+    paraphrase_id: p1
+    seed: 6701
+    initial: configs/zelda_pcg_disconnected_initial_32x32.txt
+    instruction: >-
+      The current dungeon has disconnected walkable islands. Add the smallest
+      practical corridors needed to put every entity in one reachable region
+      while otherwise preserving the layout.
+    expected_sequence: [generate_zelda_connect]
+    manual_equivalent_allowed: true
+    outcome_constraints: {functional_valid: {eq: true}, regions: {eq: 1}}
+  - task_id: reconnect-p2
+    family_id: reconnect_regions
+    paraphrase_id: p2
+    seed: 6701
+    initial: configs/zelda_pcg_disconnected_initial_32x32.txt
+    instruction: >-
+      Repair this split dungeon with as few connecting passages as reasonably
+      possible. Do not move the special entities; make all of them mutually
+      reachable on a single walkable component.
+    expected_sequence: [generate_zelda_connect]
+    manual_equivalent_allowed: true
+    outcome_constraints: {functional_valid: {eq: true}, regions: {eq: 1}}
+  - task_id: reconnect-p3
+    family_id: reconnect_regions
+    paraphrase_id: p3
+    seed: 6701
+    initial: configs/zelda_pcg_disconnected_initial_32x32.txt
+    instruction: >-
+      当前地牢被分成多个互不连通的可行走区域。请尽量少开新走廊，把所有实体接入同一个
+      连通区域，并保留原有实体位置。
+    expected_sequence: [generate_zelda_connect]
+    manual_equivalent_allowed: true
+    outcome_constraints: {functional_valid: {eq: true}, regions: {eq: 1}}

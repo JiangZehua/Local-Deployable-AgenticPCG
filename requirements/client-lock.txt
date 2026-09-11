@@ -1,0 +1,25 @@
+# Tested base client environment: CPython 3.12, macOS arm64.
+# Install this before the editable project to retain transitive dependency versions.
+PyYAML==6.0.3
+annotated-types==0.8.0
+anyio==4.15.1
+attrs==26.1.0
+h11==0.16.0
+httpcore2==2.12.0
+httpx2==2.12.0
+idna==3.19
+jiter==0.16.0
+jsonschema-specifications==2025.9.1
+jsonschema==4.26.0
+numpy==2.2.6
+openai==3.8.0
+pillow==12.3.0
+pydantic==2.13.5
+pydantic_core==2.46.5
+python-dotenv==1.2.3
+referencing==0.37.0
+rpds-py==2026.6.3
+sniffio==1.3.1
+truststore==0.10.4
+typing-inspection==0.4.4
+typing_extensions==4.16.0

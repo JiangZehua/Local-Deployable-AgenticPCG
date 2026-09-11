@@ -1,0 +1,80 @@
+{
+  "schema_version": "gemma4-z64-protocol-v2",
+  "model": {
+    "repo": "google/gemma-4-31B-it",
+    "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+    "served_model_name": "gemma4-31b-pcg",
+    "dtype": "bfloat16",
+    "quantization": null
+  },
+  "server": {
+    "tensor_parallel_size": 1,
+    "max_model_len": 32768,
+    "max_num_seqs": 1,
+    "max_num_batched_tokens": 32768,
+    "gpu_memory_utilization": 0.9,
+    "reasoning_parser": "gemma4",
+    "generation_config": "vllm",
+    "speculative_decoding": false,
+    "modalities": [
+      "text"
+    ]
+  },
+  "shared": {
+    "target_file": "configs/paper_m2_z64_target_ids.txt",
+    "target_file_sha256": "9a18c44583c1c528b9a3f319c51b51435c1535bc5cddb492793d332d93b46ab8",
+    "source_subset_path": "benchmarks/zelda/test721.json",
+    "source_subset_sha256": "93f75c8719dbd902d779a64011b11f675401c034b7070f70f0f21c1b637960c2",
+    "runtime_dependencies": {
+      "stdlib_imports": [],
+      "pythonpath_submodules": {
+        "vendor/generators": "6fb191e7596fe5fe3305440d4d147c25be647dc1",
+        "vendor/pcg_benchmark": "1151f450e6c86530e9650fdde3444c0db6892b33"
+      },
+      "host_cli_tools": [
+        "git",
+        "nvidia-smi"
+      ]
+    },
+    "temperature": 0.0,
+    "request_seed_offset": 0,
+    "max_steps": 4,
+    "max_tool_calls_per_step": 20,
+    "conversation_length": 2,
+    "context_tokens": 32768,
+    "concurrency": 1,
+    "timeout_seconds_per_call": 300,
+    "formal_target_count_per_arm": 64,
+    "paired_target_count": 64,
+    "allocated_gpu_hour_limit": 24.0
+  },
+  "arms": {
+    "open_loop": {
+      "ablation_mode": "no_evaluation_loop",
+      "enable_thinking": true,
+      "max_tokens": 8192,
+      "thinking_max_tokens": null,
+      "truncation_recovery": "none",
+      "extra_instruction_file": null
+    },
+    "verified": {
+      "ablation_mode": "full",
+      "enable_thinking": true,
+      "max_tokens": 8192,
+      "thinking_max_tokens": 6144,
+      "truncation_recovery": "thinking_off_handoff",
+      "extra_instruction_file": "prompts/zelda_geometry_serialization_rules_v3.txt"
+    }
+  },
+  "analysis": {
+    "bootstrap_resamples": 200000,
+    "bootstrap_seed": 20260831,
+    "confidence_level": 0.95,
+    "mcnemar": "exact_two_sided"
+  },
+  "token_accounting": {
+    "input_tokens": "vLLM OpenAI usage.prompt_tokens",
+    "output_tokens": "vLLM OpenAI usage.completion_tokens; includes reasoning tokens",
+    "reasoning_tokens": "null unless the server exposes a separate exact count; never double-counted"
+  }
+}

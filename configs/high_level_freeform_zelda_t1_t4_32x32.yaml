@@ -1,0 +1,238 @@
+schema_version: high_level_freeform_eval.v1
+suite_id: zelda_qwen38_27b_t1_t4_paraphrase_32x32_seed42_v1
+status: frozen_before_generation
+claim_boundary: >-
+  One-seed diagnostic of within-tier prompt robustness: three semantically
+  equivalent phrasings for each of the existing Zelda T1--T4 capabilities.
+  Programmatic atoms measure visible tile relations; the T4 scene-level
+  narrative judgment remains separate and pending.
+
+environment:
+  domain: zelda
+  config: configs/zelda_freeform_32x32_full.yaml
+  initial_level: configs/high_level_freeform_zelda_initial_32x32.txt
+  height: 32
+  width: 32
+  max_steps: 10
+  replicate_seeds: [42]
+  render_stats: false
+  render_sim: false
+
+conditions:
+  instructed: frozen instruction supplied through --extra-instruction
+  "null": no extra instruction within the same harness arm
+  pairing: same initial map, seed, model, decoding, budget, tools, and harness arm
+
+rating_scale:
+  1: not recognizable
+  2: weak resemblance with major requested elements missing
+  3: partially recognizable with at least half of the visible criteria present
+  4: clearly recognizable with only a minor omission or spatial error
+  5: clearly and completely satisfies the instruction
+
+cases:
+  - case_id: z_t1_direct_u_courtyard
+    tier: 1
+    capability: explicit_geometry_direct
+    evaluator: z_t1_u_courtyard
+    instruction: >-
+      Build one large U-shaped courtyard from a single connected interior wall.
+      The two side walls should run downward into a bottom wall; keep the top
+      open as the entrance and leave the interior empty and walkable.
+    required_atoms: &t1_atoms
+      - one_large_interior_wall_structure
+      - u_shaped_courtyard
+      - open_top_entrance
+      - hollow_walkable_interior
+    programmatic_atoms: *t1_atoms
+    human_question: How clearly does the map show one large hollow U-shaped courtyard open at the top?
+    hard_negatives: &t1_negatives
+      - A closed rectangular room with no open top.
+      - An upside-down U with an open bottom.
+      - Several small disconnected wall fragments.
+      - A solid rectangular block with no walkable interior.
+
+  - case_id: z_t1_horseshoe_paraphrase
+    tier: 1
+    capability: explicit_geometry_metaphor
+    evaluator: z_t1_u_courtyard
+    instruction: >-
+      Shape the interior walls like one oversized upright horseshoe: long left
+      and right arms joined across the bottom. Do not close the north side, and
+      keep the space enclosed by the horseshoe clear for walking.
+    required_atoms: *t1_atoms
+    programmatic_atoms: *t1_atoms
+    human_question: How clearly does the map show one large hollow U-shaped courtyard open at the top?
+    hard_negatives: *t1_negatives
+
+  - case_id: z_t1_structured_u_constraints
+    tier: 1
+    capability: explicit_geometry_structured
+    evaluator: z_t1_u_courtyard
+    instruction: >-
+      Geometry constraints: (1) create exactly one dominant connected interior
+      wall component; (2) its left, right, and bottom sides form a U; (3) at
+      least most of the top span stays passable; (4) its interior contains no
+      wall mass and remains part of the walkable map.
+    required_atoms: *t1_atoms
+    programmatic_atoms: *t1_atoms
+    human_question: How clearly does the map show one large hollow U-shaped courtyard open at the top?
+    hard_negatives: *t1_negatives
+
+  - case_id: z_t2_named_uppercase_z
+    tier: 2
+    capability: symbolic_pattern_named
+    evaluator: z_t2_wall_letter_z
+    instruction: >-
+      Use one connected interior-wall component to draw a large uppercase Z:
+      a full upper bar, a diagonal descending toward the lower left, and a full
+      lower bar. Make it clearly recognizable rather than a loose zigzag.
+    required_atoms: &t2_atoms
+      - one_connected_interior_wall_glyph
+      - z_upper_horizontal_bar
+      - z_descending_diagonal
+      - z_lower_horizontal_bar
+      - recognizable_uppercase_z
+    programmatic_atoms: *t2_atoms
+    human_question: How clearly do the interior walls form one uppercase Z?
+    hard_negatives: &t2_negatives
+      - Two horizontal bars with no diagonal connection.
+      - An uppercase N whose diagonal rises in the other direction.
+      - Several disconnected short wall strokes.
+      - An abstract zigzag without full top and bottom bars.
+
+  - case_id: z_t2_stroke_description
+    tier: 2
+    capability: symbolic_pattern_strokes
+    evaluator: z_t2_wall_letter_z
+    instruction: >-
+      Make a single wall glyph with this stroke layout: a long horizontal line
+      across the top, then a continuous diagonal down and left, then another
+      long horizontal line across the bottom. Scale the three-stroke figure up
+      so its intended capital-letter shape is visually obvious.
+    required_atoms: *t2_atoms
+    programmatic_atoms: *t2_atoms
+    human_question: How clearly do the interior walls form one uppercase Z?
+    hard_negatives: *t2_negatives
+
+  - case_id: z_t2_relational_z_constraints
+    tier: 2
+    capability: symbolic_pattern_relational
+    evaluator: z_t2_wall_letter_z
+    instruction: >-
+      Pattern specification: one connected interior-wall glyph; its top and
+      bottom rows are parallel filled bars of similar width; intermediate wall
+      cells trace a descending diagonal from the upper-right end to the
+      lower-left end. Avoid extra branches or a second glyph.
+    required_atoms: *t2_atoms
+    programmatic_atoms: *t2_atoms
+    human_question: How clearly do the interior walls form one uppercase Z?
+    hard_negatives: *t2_negatives
+
+  - case_id: z_t3_direct_entity_relations
+    tier: 3
+    capability: compositional_relations_direct
+    evaluator: z_t3_left_to_right_guard_line
+    instruction: >-
+      Reposition the entities so P is left of K and K is left of D. Put exactly
+      three E tiles in adjacent cells on one horizontal row below K. Preserve
+      one of each P, K, D and a single connected walkable region.
+    required_atoms: &t3_atoms
+      - player_left_of_key
+      - key_left_of_door
+      - three_enemy_horizontal_guard_line
+      - enemy_line_below_key
+    programmatic_atoms: *t3_atoms
+    human_question: How clearly are P, K, and D ordered left-to-right with a three-enemy line below K?
+    hard_negatives: &t3_negatives
+      - D, K, and P appear in the reverse horizontal order.
+      - The three enemies form a vertical column.
+      - The enemy row is above the key.
+      - The enemies are separated rather than occupying adjacent cells.
+
+  - case_id: z_t3_structured_entity_constraints
+    tier: 3
+    capability: compositional_relations_structured
+    evaluator: z_t3_left_to_right_guard_line
+    instruction: >-
+      Entity layout constraints: `x(P) < x(K) < x(D)`; all three enemies share
+      one y coordinate greater than `y(K)`; their x coordinates are consecutive.
+      Move entities atomically by clearing old cells in the same transaction,
+      and keep the final Zelda map valid and connected.
+    required_atoms: *t3_atoms
+    programmatic_atoms: *t3_atoms
+    human_question: How clearly are P, K, and D ordered left-to-right with a three-enemy line below K?
+    hard_negatives: *t3_negatives
+
+  - case_id: z_t3_quest_sequence_paraphrase
+    tier: 3
+    capability: compositional_relations_narrative
+    evaluator: z_t3_left_to_right_guard_line
+    instruction: >-
+      Stage a left-to-right quest: the hero begins on the left, the key waits
+      farther right, and the exit lies farther right again. Beneath the key,
+      three guards stand shoulder-to-shoulder in one horizontal rank. No entity
+      should be duplicated and every required path must remain reachable.
+    required_atoms: *t3_atoms
+    programmatic_atoms: *t3_atoms
+    human_question: How clearly are P, K, and D ordered left-to-right with a three-enemy line below K?
+    hard_negatives: *t3_negatives
+
+  - case_id: z_t4_guarded_vault_concise
+    tier: 4
+    capability: narrative_scene_concise
+    evaluator: z_t4_guarded_key_vault
+    instruction: >-
+      Depict a guarded key vault: a large upright U-shaped wall surrounds K,
+      D marks the open top entrance, and three enemies wait together outside
+      and above that entrance while P approaches from elsewhere.
+    required_atoms: &t4_atoms
+      - u_shaped_wall_vault
+      - key_inside_vault
+      - door_at_open_entrance
+      - three_enemies_guard_outside
+      - guarded_treasure_vault_scene
+    programmatic_atoms: &t4_programmatic
+      - u_shaped_wall_vault
+      - key_inside_vault
+      - door_at_open_entrance
+      - three_enemies_guard_outside
+    judgment_atoms: &t4_judged
+      - guarded_treasure_vault_scene
+    human_question: How clearly does the map depict a guarded key vault with the hero approaching from outside?
+    hard_negatives: &t4_negatives
+      - The key is outside an empty U-shaped wall.
+      - The enemies are trapped inside with the key.
+      - The door is far from the open vault entrance.
+      - A closed room has no passable top entrance.
+
+  - case_id: z_t4_moon_shrine_story
+    tier: 4
+    capability: narrative_scene_story
+    evaluator: z_t4_guarded_key_vault
+    instruction: >-
+      At the end of a moonlit pilgrimage, the adventurer reaches an ancient
+      horseshoe-shaped shrine. The Moon Key rests within its hollow sanctuary.
+      The exit door stands at the shrine's northern opening, and three sentries
+      form a compact rank outside the threshold, between the hero and the key.
+    required_atoms: *t4_atoms
+    programmatic_atoms: *t4_programmatic
+    judgment_atoms: *t4_judged
+    human_question: How clearly does the map depict a guarded key vault with the hero approaching from outside?
+    hard_negatives: *t4_negatives
+
+  - case_id: z_t4_fortress_scene_detailed
+    tier: 4
+    capability: narrative_scene_detailed
+    evaluator: z_t4_guarded_key_vault
+    instruction: >-
+      Compose the final fortress scene. One broad hollow U of stone walls opens
+      to the north. Place the quest key well inside it and the locked exit at
+      the middle of that open mouth. Outside the mouth, exactly three guards
+      stand together above it; the lone player remains outside the enclosure.
+      Preserve all Zelda reachability and entity-count constraints.
+    required_atoms: *t4_atoms
+    programmatic_atoms: *t4_programmatic
+    judgment_atoms: *t4_judged
+    human_question: How clearly does the map depict a guarded key vault with the hero approaching from outside?
+    hard_negatives: *t4_negatives

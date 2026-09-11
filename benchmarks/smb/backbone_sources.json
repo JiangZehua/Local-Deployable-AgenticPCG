@@ -1,0 +1,148 @@
+{
+  "expanded_manifest": [
+    {
+      "target": {
+        "coins": 0,
+        "enemies": 0,
+        "jumps": 1
+      },
+      "status": "certified_feasible",
+      "level_sha256": "55e411100370d24e48f257aa85f2792fb7c5d3c472cd5cb5b589a21fa690129c"
+    },
+    {
+      "target": {
+        "coins": 1,
+        "enemies": 0,
+        "jumps": 2
+      },
+      "status": "certified_feasible",
+      "level_sha256": "8cc8fbeff6e02e5d54922ce989db81c4c0ef988a8313d028937492e833e3a3e9"
+    },
+    {
+      "target": {
+        "coins": 2,
+        "enemies": 0,
+        "jumps": 3
+      },
+      "status": "certified_feasible",
+      "level_sha256": "a742fb745b228972cfca77074f70df99cf8567336c39931eb9502b3f8fbec1cc"
+    },
+    {
+      "target": {
+        "coins": 3,
+        "enemies": 0,
+        "jumps": 4
+      },
+      "status": "certified_feasible",
+      "level_sha256": "2c53939e369848909deb90857a2a972856eecd7969401e9a0db2c90236cb477b"
+    },
+    {
+      "target": {
+        "coins": 4,
+        "enemies": 0,
+        "jumps": 5
+      },
+      "status": "certified_feasible",
+      "level_sha256": "e17cd78d6a6084beab441b50669d41d369a49fe4a46fb041572e5466b9cca1e5"
+    },
+    {
+      "target": {
+        "coins": 0,
+        "enemies": 1,
+        "jumps": 0
+      },
+      "status": "certified_feasible",
+      "level_sha256": "16c0411fd8f90f4fa3abe9ad77e3a3ee2a4e83a5910df033a537d98ad12ac62f"
+    },
+    {
+      "target": {
+        "coins": 0,
+        "enemies": 1,
+        "jumps": 1
+      },
+      "status": "certified_feasible",
+      "level_sha256": "2b72f0c16494103a36f4ff27297328f72c6830330c3c12f456c99896203fc7b2"
+    },
+    {
+      "target": {
+        "coins": 1,
+        "enemies": 1,
+        "jumps": 2
+      },
+      "status": "certified_feasible",
+      "level_sha256": "00c3316b0702b19acbcf4e37594fc8602fd0c27c518730e3cdc9730a250d46d6"
+    },
+    {
+      "target": {
+        "coins": 2,
+        "enemies": 1,
+        "jumps": 3
+      },
+      "status": "certified_feasible",
+      "level_sha256": "5d8b9129e33e06d908ead662d8c805c9165ba5925ec55e2f8c0fead91766faff"
+    },
+    {
+      "target": {
+        "coins": 3,
+        "enemies": 1,
+        "jumps": 4
+      },
+      "status": "certified_feasible",
+      "level_sha256": "85169380a2afc696fad9eefdd339ac7fd973293316ce107f8552415122016748"
+    },
+    {
+      "target": {
+        "coins": 0,
+        "enemies": 2,
+        "jumps": 1
+      },
+      "status": "certified_feasible",
+      "level_sha256": "5bec72bdadb2162129a839332190c4663362f1c66966da8de7281df0dfaa8172"
+    },
+    {
+      "target": {
+        "coins": 0,
+        "enemies": 2,
+        "jumps": 2
+      },
+      "status": "certified_feasible",
+      "level_sha256": "0d5f0b73477655d665e132c0e25373230e8c361d311f8b2b998bd05ed0742c49"
+    },
+    {
+      "target": {
+        "coins": 1,
+        "enemies": 2,
+        "jumps": 3
+      },
+      "status": "certified_feasible",
+      "level_sha256": "379fcec0389016c9908d6c9948f57d59de6ad6d1f582851d00952de1a3dfcaa2"
+    },
+    {
+      "target": {
+        "coins": 4,
+        "enemies": 2,
+        "jumps": 0
+      },
+      "status": "certified_feasible",
+      "level_sha256": "0c92ad263332363a27102a0c3af860c79adf1765352d6b190d18b8ea26e765b0"
+    },
+    {
+      "target": {
+        "coins": 2,
+        "enemies": 3,
+        "jumps": 0
+      },
+      "status": "certified_feasible",
+      "level_sha256": "fba77ffb98acb14343b3f62caa3d9ddfb8bc6e6f00c3df4f95762262ff7cffe7"
+    },
+    {
+      "target": {
+        "coins": 3,
+        "enemies": 3,
+        "jumps": 1
+      },
+      "status": "certified_feasible",
+      "level_sha256": "2fa993b810bd1719861552d222bc38ead411869e069d6dc49f57263a20a88474"
+    }
+  ]
+}

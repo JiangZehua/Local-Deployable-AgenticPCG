@@ -1,0 +1,19 @@
+Treat door_path as a strict exact target, not an approximate or maximize goal.
+Read the two bordered-door coordinates and their adjacent inner cells from the
+current prompt; never assume the seed-42 door positions.
+
+A robust construction is to fill the editable 16x16 grid with walls and carve
+one connected, one-cell-wide corridor between the two adjacent inner door
+cells. The bordered door_path equals two border-crossing edges plus the number
+of edges along the interior corridor. Thus an exact target T needs an interior
+door-neighbor path of T-2 edges (T-1 empty inner cells when the corridor has no
+branches). Prevent shortcuts by separating parallel runs with an uncarved wall
+row or column and by avoiding side-adjacency between nonconsecutive corridor
+cells.
+
+Count the intended path before emitting tools. Prefer one atomic STEP: fill the
+grid, then carve the complete corridor using rect/line/single place_tile calls,
+within the 20-call limit. Both door-adjacent cells must be empty and all empty
+cells must form exactly one region. Do not emit a partial fill or partial
+corridor. On feedback, use measured target error and preserve door attachment
+and one-region validity.

@@ -1,0 +1,21 @@
+Enemy tiles are traversable and replace walls. In a forced corridor, an enemy
+"dead-end pocket" is safe only if that enemy cell has exactly one orthogonally
+adjacent non-wall cell after all edits. Count north, south, east, and west for
+every enemy. Never place an enemy in a separating wall row where it touches
+both adjacent corridor runs, because that opens a shortcut.
+
+Before emitting corridor edits, verify each intended path length by summing
+Manhattan steps between consecutive segment endpoints: moving from row y to
+row y+2 costs 2 moves, not 1. Then index the final corridor cells from P=0:
+K must be at index player_key and D at index player_key+key_door; recount the
+actual carved run lengths and connectors if the final D index does not match.
+Merge collinear carve operations and reserve enough tool calls to place every
+required player, key, door, and enemy in the same complete transaction; do not
+emit a partial entity-count repair.
+
+For a long forced corridor, prefer filling the whole grid with walls and then
+carving non-touching corridor runs; drawing a boundary wall around an otherwise
+open exterior does not remove that exterior and can create extra regions.
+Enemies need not be separate pockets: because they are traversable, all three
+may replace consecutive cells of an already carved corridor in one line call
+without changing connectivity or path lengths.

@@ -1,0 +1,71 @@
+# Static tile-count control with mandatory structural and A* playability gates.
+env:
+  name: smb-static-v0
+  height: 16
+  width: 32
+  smb_solver: astar
+  tiles:
+    EMPTY: 0
+    SOLID: 1
+    LADDER: 2
+    BRICK: 3
+    QUESTION: 4
+    TUBE: 5
+    COIN: 6
+    GOOMBA: 7
+    KOOPA: 8
+    SPINY: 9
+
+targets:
+  pipe_count: {mode: target, value: 2}
+  enemy_tile_count: {mode: target, value: 3}
+  coin_tile_count: {mode: target, value: 3}
+  block_tile_count: {mode: target, value: 12}
+
+scoring:
+  w_pipe_count: 20.0
+  w_enemy_tile_count: 10.0
+  w_coin_tile_count: 10.0
+  w_block_tile_count: 1.0
+  w_change_penalty: 100.0
+  w_complete: 100.0
+  w_coin_reachability: 40.0
+  w_support: 50.0
+  w_coherence: 0.0
+
+optimizer:
+  strategy: greedy
+  epsilon_accept_worse: 0.0
+  # The experiment harness initializes a fixed platform floor which is not a
+  # count-controlled block tile.  This field remains explicit for callers that
+  # do not supply that scaffold.
+  init_strategy: empty
+  # SMB coordinate grammar emits the unified place_tile transaction with
+  # mode=single/line/rect. Register that exact protocol tool name.
+  edit_tools: [place_tile]
+  max_tool_calls_per_step: 20
+
+termination:
+  change_budget_multiplier: 3.0
+
+llm:
+  provider: openai
+  model: "Qwen/Qwen3.6-35B-A3B-FP8"
+  base_url: "http://localhost:8000/v1"
+  max_tokens: 4096
+  temperature: 0.0
+  extra_body:
+    chat_template_kwargs:
+      enable_thinking: false
+  grammar_domain: smb
+  grammar_max_tool_calls: 20
+
+experiment:
+  controllability:
+    ranges:
+      pipe_count: {min_value: 0, max_value: 4, step: 1}
+      enemy_tile_count: {min_value: 0, max_value: 6, step: 1}
+      coin_tile_count: {min_value: 0, max_value: 6, step: 1}
+      block_tile_count: {min_value: 0, max_value: 32, step: 4}
+
+seed: 42

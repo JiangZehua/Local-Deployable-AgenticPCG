@@ -1,0 +1,125 @@
+{
+  "manifest_id": "SMB-STATIC-PLAYABILITY-LANGUAGE-v2",
+  "schema_version": "smb-static-playability-v2",
+  "frozen": true,
+  "split": "static_playability",
+  "source_manifest_sha256": "67f451e3399276b6c10cede0584091f24d11b32c50a919933ba6c4c140be084b",
+  "valid_target_cases": 7,
+  "guard_cases": 1,
+  "cases": [
+    {
+      "case_id": "static-en-10-v2",
+      "role": "valid_target",
+      "instruction": "In the static SMB tile grid, place exactly four valid pipes, six enemy tiles, five coin tiles, and thirty-two block tiles. Do not interpret these as gameplay outcomes.",
+      "expected": {
+        "status": "resolved",
+        "domain": "smb_static",
+        "constraints": {
+          "pipe_count": {"relation": "exact", "value": 4},
+          "enemy_tile_count": {"relation": "exact", "value": 6},
+          "coin_tile_count": {"relation": "exact", "value": 5},
+          "block_tile_count": {"relation": "exact", "value": 32}
+        }
+      }
+    },
+    {
+      "case_id": "static-zh-11-v2",
+      "role": "valid_target",
+      "instruction": "这是静态 tile-count 任务：水管正好两个，敌人 tile 三个，金币 tile 四个，block tile 十二个。",
+      "expected": {
+        "status": "resolved",
+        "domain": "smb_static",
+        "constraints": {
+          "pipe_count": {"relation": "exact", "value": 2},
+          "enemy_tile_count": {"relation": "exact", "value": 3},
+          "coin_tile_count": {"relation": "exact", "value": 4},
+          "block_tile_count": {"relation": "exact", "value": 12}
+        }
+      }
+    },
+    {
+      "case_id": "static-zero-12-v2",
+      "role": "valid_target",
+      "instruction": "For the static content grid, use zero pipes, zero enemy tiles, zero coin tiles, and zero blocks.",
+      "expected": {
+        "status": "resolved",
+        "domain": "smb_static",
+        "constraints": {
+          "pipe_count": {"relation": "exact", "value": 0},
+          "enemy_tile_count": {"relation": "exact", "value": 0},
+          "coin_tile_count": {"relation": "exact", "value": 0},
+          "block_tile_count": {"relation": "exact", "value": 0}
+        }
+      }
+    },
+    {
+      "case_id": "static-synonym-13-v2",
+      "role": "valid_target",
+      "instruction": "The level file itself should contain one pipe component, two enemy sprites as tiles, six C tiles, and twenty solid/brick/question blocks.",
+      "expected": {
+        "status": "resolved",
+        "domain": "smb_static",
+        "constraints": {
+          "pipe_count": {"relation": "exact", "value": 1},
+          "enemy_tile_count": {"relation": "exact", "value": 2},
+          "coin_tile_count": {"relation": "exact", "value": 6},
+          "block_tile_count": {"relation": "exact", "value": 20}
+        }
+      }
+    },
+    {
+      "case_id": "static-preference-14-v2",
+      "role": "valid_target",
+      "instruction": "Use at least two static pipe components and exactly three enemy tiles. Keep blocks at no more than sixteen and maximize the number of coin tiles.",
+      "expected": {
+        "status": "resolved",
+        "domain": "smb_static",
+        "constraints": {
+          "pipe_count": {"relation": "min", "value": 2},
+          "enemy_tile_count": {"relation": "exact", "value": 3},
+          "block_tile_count": {"relation": "max", "value": 16}
+        },
+        "objectives": [
+          {"metric": "coin_tile_count", "direction": "maximize"}
+        ]
+      }
+    },
+    {
+      "case_id": "static-partial-15-v2",
+      "role": "valid_target",
+      "instruction": "This is about the static grid: place exactly two enemy tiles and exactly three coin tiles; the other tile-count metrics may be chosen freely.",
+      "expected": {
+        "status": "resolved",
+        "domain": "smb_static",
+        "constraints": {
+          "enemy_tile_count": {"relation": "exact", "value": 2},
+          "coin_tile_count": {"relation": "exact", "value": 3}
+        }
+      }
+    },
+    {
+      "case_id": "guard-vague-static-20-v2",
+      "role": "guard",
+      "instruction": "Put several pipes and plenty of blocks into the static SMB grid.",
+      "expected": {
+        "status": "needs_clarification",
+        "domain": "smb_static"
+      }
+    },
+    {
+      "case_id": "static-range-23-v2",
+      "role": "valid_target",
+      "instruction": "For static tile counts, use at most one pipe, at least four enemy tiles, exactly two coin tiles, and no more than eight blocks.",
+      "expected": {
+        "status": "resolved",
+        "domain": "smb_static",
+        "constraints": {
+          "pipe_count": {"relation": "max", "value": 1},
+          "enemy_tile_count": {"relation": "min", "value": 4},
+          "coin_tile_count": {"relation": "exact", "value": 2},
+          "block_tile_count": {"relation": "max", "value": 8}
+        }
+      }
+    }
+  ]
+}

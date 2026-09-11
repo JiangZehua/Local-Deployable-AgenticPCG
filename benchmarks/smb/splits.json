@@ -1,0 +1,990 @@
+{
+  "oracle_witnesses_exposed_to_model": false,
+  "policy": {
+    "fractions": {
+      "dev": 0.3,
+      "sealed_test": 0.4,
+      "validation": 0.3
+    },
+    "rounding": {
+      "dev": 29,
+      "sealed_test": 38,
+      "validation": 29
+    },
+    "stratification": "every split covers all certified (kills,jumps) states and coin values",
+    "unit": "target"
+  },
+  "schema_version": "r083-smb-mastery-split-v1",
+  "semantic_sha256": "436e8ff1e4b778a519c2c7509e788771fbdee0ae083d44c698b9de7d94431534",
+  "split_id": "F_SMB-v0-split-v0",
+  "splits": {
+    "dev": [
+      {
+        "case_id": "smb-dev-00-k0-c0-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 0,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 1
+        }
+      },
+      {
+        "case_id": "smb-dev-01-k0-c1-j2",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 1,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 2
+        }
+      },
+      {
+        "case_id": "smb-dev-02-k0-c2-j3",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 2,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 3
+        }
+      },
+      {
+        "case_id": "smb-dev-03-k0-c3-j4",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 3,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 4
+        }
+      },
+      {
+        "case_id": "smb-dev-04-k0-c4-j4",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 4,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 4
+        }
+      },
+      {
+        "case_id": "smb-dev-05-k0-c4-j5",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 4,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 5
+        }
+      },
+      {
+        "case_id": "smb-dev-06-k0-c5-j5",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 5,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 5
+        }
+      },
+      {
+        "case_id": "smb-dev-07-k1-c0-j0",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 0,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 0
+        }
+      },
+      {
+        "case_id": "smb-dev-08-k1-c0-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 0,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 1
+        }
+      },
+      {
+        "case_id": "smb-dev-09-k1-c1-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 1,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 1
+        }
+      },
+      {
+        "case_id": "smb-dev-10-k1-c1-j2",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 1,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 2
+        }
+      },
+      {
+        "case_id": "smb-dev-11-k1-c2-j2",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 2,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 2
+        }
+      },
+      {
+        "case_id": "smb-dev-12-k1-c2-j3",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 2,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 3
+        }
+      },
+      {
+        "case_id": "smb-dev-13-k1-c3-j3",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 3,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 3
+        }
+      },
+      {
+        "case_id": "smb-dev-14-k1-c3-j4",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 3,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 4
+        }
+      },
+      {
+        "case_id": "smb-dev-15-k1-c4-j4",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 4,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 4
+        }
+      },
+      {
+        "case_id": "smb-dev-16-k1-c5-j0",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 5,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 0
+        }
+      },
+      {
+        "case_id": "smb-dev-17-k2-c0-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 0,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 1
+        }
+      },
+      {
+        "case_id": "smb-dev-18-k2-c0-j2",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 0,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 2
+        }
+      },
+      {
+        "case_id": "smb-dev-19-k2-c1-j2",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 1,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 2
+        }
+      },
+      {
+        "case_id": "smb-dev-20-k2-c1-j3",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 1,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 3
+        }
+      },
+      {
+        "case_id": "smb-dev-21-k2-c2-j3",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 2,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 3
+        }
+      },
+      {
+        "case_id": "smb-dev-22-k2-c4-j0",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 4,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 0
+        }
+      },
+      {
+        "case_id": "smb-dev-23-k2-c5-j0",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 5,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 0
+        }
+      },
+      {
+        "case_id": "smb-dev-24-k2-c5-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 5,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 1
+        }
+      },
+      {
+        "case_id": "smb-dev-25-k3-c2-j0",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 2,
+          "complete": 1.0,
+          "enemies": 3,
+          "jumps": 0
+        }
+      },
+      {
+        "case_id": "smb-dev-26-k3-c3-j0",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 3,
+          "complete": 1.0,
+          "enemies": 3,
+          "jumps": 0
+        }
+      },
+      {
+        "case_id": "smb-dev-27-k3-c3-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 3,
+          "complete": 1.0,
+          "enemies": 3,
+          "jumps": 1
+        }
+      },
+      {
+        "case_id": "smb-dev-28-k3-c4-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 4,
+          "complete": 1.0,
+          "enemies": 3,
+          "jumps": 1
+        }
+      }
+    ],
+    "sealed_test": [
+      {
+        "case_id": "smb-sealed_test-00-k0-c0-j2",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 0,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 2
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-01-k0-c0-j3",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 0,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 3
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-02-k0-c0-j4",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 0,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 4
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-03-k0-c1-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 1,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 1
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-04-k0-c1-j3",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 1,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 3
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-05-k0-c1-j4",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 1,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 4
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-06-k0-c1-j5",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 1,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 5
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-07-k0-c2-j2",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 2,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 2
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-08-k0-c2-j4",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 2,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 4
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-09-k0-c2-j5",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 2,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 5
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-10-k0-c3-j3",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 3,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 3
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-11-k0-c3-j5",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 3,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 5
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-12-k0-c4-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 4,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 1
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-13-k0-c5-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 5,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 1
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-14-k0-c5-j2",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 5,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 2
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-15-k1-c0-j2",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 0,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 2
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-16-k1-c0-j3",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 0,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 3
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-17-k1-c1-j3",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 1,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 3
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-18-k1-c1-j4",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 1,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 4
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-19-k1-c2-j0",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 2,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 0
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-20-k1-c2-j4",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 2,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 4
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-21-k1-c3-j0",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 3,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 0
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-22-k1-c4-j0",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 4,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 0
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-23-k1-c4-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 4,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 1
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-24-k1-c5-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 5,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 1
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-25-k1-c5-j2",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 5,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 2
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-26-k2-c0-j3",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 0,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 3
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-27-k2-c2-j0",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 2,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 0
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-28-k2-c3-j0",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 3,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 0
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-29-k2-c3-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 3,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 1
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-30-k2-c4-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 4,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 1
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-31-k2-c4-j2",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 4,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 2
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-32-k2-c5-j2",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 5,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 2
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-33-k2-c5-j3",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 5,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 3
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-34-k3-c0-j0",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 0,
+          "complete": 1.0,
+          "enemies": 3,
+          "jumps": 0
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-35-k3-c1-j0",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 1,
+          "complete": 1.0,
+          "enemies": 3,
+          "jumps": 0
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-36-k3-c1-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 1,
+          "complete": 1.0,
+          "enemies": 3,
+          "jumps": 1
+        }
+      },
+      {
+        "case_id": "smb-sealed_test-37-k3-c2-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 2,
+          "complete": 1.0,
+          "enemies": 3,
+          "jumps": 1
+        }
+      }
+    ],
+    "validation": [
+      {
+        "case_id": "smb-validation-00-k0-c0-j5",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 0,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 5
+        }
+      },
+      {
+        "case_id": "smb-validation-01-k0-c2-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 2,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 1
+        }
+      },
+      {
+        "case_id": "smb-validation-02-k0-c3-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 3,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 1
+        }
+      },
+      {
+        "case_id": "smb-validation-03-k0-c3-j2",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 3,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 2
+        }
+      },
+      {
+        "case_id": "smb-validation-04-k0-c4-j2",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 4,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 2
+        }
+      },
+      {
+        "case_id": "smb-validation-05-k0-c4-j3",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 4,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 3
+        }
+      },
+      {
+        "case_id": "smb-validation-06-k0-c5-j3",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 5,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 3
+        }
+      },
+      {
+        "case_id": "smb-validation-07-k0-c5-j4",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 5,
+          "complete": 1.0,
+          "enemies": 0,
+          "jumps": 4
+        }
+      },
+      {
+        "case_id": "smb-validation-08-k1-c0-j4",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 0,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 4
+        }
+      },
+      {
+        "case_id": "smb-validation-09-k1-c1-j0",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 1,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 0
+        }
+      },
+      {
+        "case_id": "smb-validation-10-k1-c2-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 2,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 1
+        }
+      },
+      {
+        "case_id": "smb-validation-11-k1-c3-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 3,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 1
+        }
+      },
+      {
+        "case_id": "smb-validation-12-k1-c3-j2",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 3,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 2
+        }
+      },
+      {
+        "case_id": "smb-validation-13-k1-c4-j2",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 4,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 2
+        }
+      },
+      {
+        "case_id": "smb-validation-14-k1-c4-j3",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 4,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 3
+        }
+      },
+      {
+        "case_id": "smb-validation-15-k1-c5-j3",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 5,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 3
+        }
+      },
+      {
+        "case_id": "smb-validation-16-k1-c5-j4",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 5,
+          "complete": 1.0,
+          "enemies": 1,
+          "jumps": 4
+        }
+      },
+      {
+        "case_id": "smb-validation-17-k2-c0-j0",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 0,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 0
+        }
+      },
+      {
+        "case_id": "smb-validation-18-k2-c1-j0",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 1,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 0
+        }
+      },
+      {
+        "case_id": "smb-validation-19-k2-c1-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 1,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 1
+        }
+      },
+      {
+        "case_id": "smb-validation-20-k2-c2-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 2,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 1
+        }
+      },
+      {
+        "case_id": "smb-validation-21-k2-c2-j2",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 2,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 2
+        }
+      },
+      {
+        "case_id": "smb-validation-22-k2-c3-j2",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 3,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 2
+        }
+      },
+      {
+        "case_id": "smb-validation-23-k2-c3-j3",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 3,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 3
+        }
+      },
+      {
+        "case_id": "smb-validation-24-k2-c4-j3",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 4,
+          "complete": 1.0,
+          "enemies": 2,
+          "jumps": 3
+        }
+      },
+      {
+        "case_id": "smb-validation-25-k3-c0-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 0,
+          "complete": 1.0,
+          "enemies": 3,
+          "jumps": 1
+        }
+      },
+      {
+        "case_id": "smb-validation-26-k3-c4-j0",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 4,
+          "complete": 1.0,
+          "enemies": 3,
+          "jumps": 0
+        }
+      },
+      {
+        "case_id": "smb-validation-27-k3-c5-j0",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 5,
+          "complete": 1.0,
+          "enemies": 3,
+          "jumps": 0
+        }
+      },
+      {
+        "case_id": "smb-validation-28-k3-c5-j1",
+        "feasibility_status": "certified_feasible",
+        "target": {
+          "coins": 5,
+          "complete": 1.0,
+          "enemies": 3,
+          "jumps": 1
+        }
+      }
+    ]
+  },
+  "support_id": "F_SMB-v0",
+  "support_semantic_sha256": "7ab9015711f47e7c18d67d877d401d1b1e304275b15c87f90c4466c4fdcfb57f"
+}

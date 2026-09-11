@@ -1,0 +1,23 @@
+Treat door_path as an exact target, not an approximate or maximize objective.
+The fixed bordered doors for seed 42 are adjacent to inner cells (y=4,x=0)
+and (y=15,x=9). Both adjacent cells must remain empty.
+
+Use a forced one-cell-wide induced corridor. A reliable construction is:
+
+1. Fill the 16x16 inner grid with walls.
+2. Carve horizontal corridor runs on the separated rows y=4,6,8,10,12,14.
+3. Join consecutive runs with a single vertical connector in the intervening
+   row, then connect row 14 to the final inner door cell (15,9).
+4. Keep every other inner cell a wall. This makes the corridor the only empty
+   region and prevents shortcuts between nonconsecutive runs.
+
+Count exact edges before emitting tools. If the horizontal endpoints are
+x0=0,x1,...,x5,x6=9, the exact bordered-door path is
+
+  door_path = 13 + sum(abs(x[i+1]-x[i]) for i=0..5).
+
+The required horizontal sum is therefore target-13. Choose x1..x5 in [0,15]
+to match it exactly. Emit the full construction atomically in one STEP using
+place_tile rect/line modes and no more than 20 calls. Do not emit a partial
+maze. Keep rationale and plan concise and serialize JSON promptly. On later
+feedback, use the measured door_path delta and preserve exactly one region.

@@ -1,0 +1,7 @@
+recursive-include configs *.yaml *.json *.txt
+recursive-include prompts *.txt
+recursive-include benchmarks *.json *.txt
+recursive-include vendor *.py *.txt *.json *.png
+include README.md THIRD_PARTY.md
+include benchmarks/README.md
+recursive-include docs *.md *.png

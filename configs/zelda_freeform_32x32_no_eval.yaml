@@ -1,0 +1,34 @@
+env:
+  name: zelda-v0
+  height: 32
+  width: 32
+  tiles: {WALL: 0, EMPTY: 1, PLAYER: 2, KEY: 3, DOOR: 4, ENEMY: 5}
+targets:
+  players: {mode: target, value: 1}
+  keys: {mode: target, value: 1}
+  doors: {mode: target, value: 1}
+  enemies: {mode: target, value: 3}
+scoring: {w_path: 0.0, w_regions: 10.0, w_player: 100.0, w_key: 100.0, w_door: 100.0, w_enemy: 5.0, w_playable: 200.0, w_coherence: 0.0}
+optimizer:
+  strategy: annealing
+  acceptance_policy: default
+  ablation_mode: no_evaluation_loop
+  epsilon_accept_worse: 0.0
+  annealing_initial_temp: 10.0
+  annealing_decay_rate: 0.95
+  edit_tools: [place_tile]
+  max_tool_calls_per_step: 24
+  conversation_length: 2
+  conversation_filter: all
+  stable_change_accounting: true
+termination: {change_budget_multiplier: 3.0}
+llm:
+  provider: openai
+  model: Qwen/Qwen3.8-27B
+  base_url: http://localhost:8000/v1
+  max_tokens: 4096
+  temperature: 0.0
+  extra_body: {chat_template_kwargs: {enable_thinking: false}}
+  grammar_domain: zelda
+  grammar_max_tool_calls: 24
+seed: 42
