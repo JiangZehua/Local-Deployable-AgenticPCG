@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="166" height="34" viewBox="0 0 166 34" role="img" aria-labelledby="title">
+  <title id="title">Previous website</title>
+  <rect width="166" height="34" rx="6" fill="#7c3aed"/>
+  <g fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="17" r="8"/><ellipse cx="18" cy="17" rx="3.5" ry="8"/><path d="M10 17h16M11.3 13h13.4M11.3 21h13.4"/></g>
+  <text x="36" y="21.5" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600">Previous website</text>
+</svg>

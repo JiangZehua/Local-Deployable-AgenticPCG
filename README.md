@@ -6,7 +6,9 @@
 
 Companion implementation for *Enabling Agentic PCG with Harness-Controlled Local Models*.
 
-[Project webpage](https://zehua-jiang.github.io/Local-Deployable-AgenticPCG/) · [Paper on SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7502203) · [Quick start](#quick-start) · [Reproduce the paper](#reproduce-the-paper) · [Deployment](docs/deployment.md) · [Inside the harness](docs/harness.md)
+[![Project website](docs/assets/badge-project.svg)](https://zehua-jiang.github.io/Local-Deployable-AgenticPCG/) [![SSRN paper](docs/assets/badge-paper.svg)](https://ssrn.com/abstract=7502203) [![Previous website](docs/assets/badge-prior-project.svg)](https://zehua-jiang.github.io/AgenticPCG/) [![Previous code](docs/assets/badge-prior-code.svg)](https://github.com/JiangZehua/AgenticPCG)
+
+[Quick start](#quick-start) · [Reproduce the paper](#reproduce-the-paper) · [Deployment](docs/deployment.md) · [Inside the harness](docs/harness.md)
 
 </div>
 
@@ -142,3 +144,30 @@ docs/        Reproduction, deployment, architecture and visual examples
 ```
 
 Read the [benchmark input guide](benchmarks/README.md) and [third-party attribution](THIRD_PARTY.md) for the bundled data and dependencies. Legacy experiment IDs remain in internal module names to trace the original protocols; public commands use descriptive suite names. The `RPE_PCG_*` environment prefix is retained for compatibility. Prompt evolution, training pipelines, manuscript sources and historical results are outside this release.
+
+## Citation
+
+If you use this work, please cite the local-model harness paper and the original Agentic PCG framework:
+
+```bibtex
+@article{jiang2026enabling,
+  title   = {{Enabling Agentic PCG with Harness-Controlled Local Models}},
+  author  = {Jiang, Zehua and Earle, Sam and Khalifa, Ahmed and Togelius, Julian},
+  journal = {Available at SSRN 7502203},
+  year    = {2026},
+  month   = sep,
+  doi     = {10.2139/ssrn.7502203},
+  url     = {https://ssrn.com/abstract=7502203},
+  note    = {Available at SSRN: \url{https://ssrn.com/abstract=7502203}}
+}
+
+@article{jiang2026agentic,
+  title   = {{Agentic PCG: Procedural Content Generation via Tool-using LLMs}},
+  author  = {Jiang, Zehua and Earle, Sam and Khalifa, Ahmed and Togelius, Julian},
+  journal = {Available at SSRN 6499021},
+  year    = {2026},
+  doi     = {10.2139/ssrn.6499021},
+  url     = {https://ssrn.com/abstract=6499021},
+  note    = {Available at SSRN: \url{https://ssrn.com/abstract=6499021}}
+}
+```
