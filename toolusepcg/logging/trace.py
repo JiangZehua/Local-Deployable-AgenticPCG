@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Any, TYPE_CHECKING
 
 import numpy as np
+import pcg_benchmark
 import yaml
 from PIL import Image, ImageDraw, ImageFont
 
@@ -1169,8 +1170,8 @@ class TraceLogger:
 
         # Load sprites
         try:
-            smbtile_dir = (Path(__file__).resolve().parents[2] / "submodules" /
-                           "pcg_benchmark" / "pcg_benchmark" / "probs" / "smbtile" / "images")
+            smbtile_dir = (Path(pcg_benchmark.__file__).resolve().parent /
+                           "probs" / "smbtile" / "images")
             mario_sprite = Image.open(smbtile_dir / "mario.png").convert('RGBA')
             loaded_files: dict[str, Image.Image] = {}
             enemy_sprites: dict[int, Image.Image] = {}
@@ -1374,8 +1375,8 @@ class TraceLogger:
 
         # Load sprites
         try:
-            zelda_dir = (Path(__file__).resolve().parents[2] / "submodules" /
-                         "pcg_benchmark" / "pcg_benchmark" / "probs" / "zelda" / "images")
+            zelda_dir = (Path(pcg_benchmark.__file__).resolve().parent /
+                         "probs" / "zelda" / "images")
             player_sprite = Image.open(zelda_dir / "player.png").convert('RGBA')
             bat_sprite = Image.open(zelda_dir / "bat.png").convert('RGBA')
             key_sprite = Image.open(zelda_dir / "key.png").convert('RGBA')

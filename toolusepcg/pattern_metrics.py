@@ -7,6 +7,7 @@ from functools import lru_cache
 from pathlib import Path
 
 import numpy as np
+import pcg_benchmark
 
 
 Pattern = tuple[int, ...]
@@ -104,10 +105,7 @@ def compare_pattern_distributions(reference: Distribution, generated: Distributi
 
 def _default_smb_slices_path() -> Path:
     return (
-        Path(__file__).resolve().parents[1]
-        / "submodules"
-        / "pcg_benchmark"
-        / "pcg_benchmark"
+        Path(pcg_benchmark.__file__).resolve().parent
         / "probs"
         / "smb"
         / "slices.txt"

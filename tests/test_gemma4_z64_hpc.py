@@ -164,10 +164,10 @@ class Gemma4Z64ContractTests(unittest.TestCase):
         self.assertEqual(set(protocol["arms"]), {"open_loop", "verified"})
         self.assertEqual(protocol["shared"]["formal_target_count_per_arm"], 64)
         self.assertEqual(protocol["analysis"]["bootstrap_resamples"], 200000)
-        self.assertEqual(protocol["shared"]["runtime_dependencies"]["stdlib_imports"], ["turtle"])
+        self.assertEqual(protocol["shared"]["runtime_dependencies"]["stdlib_imports"], [])
         self.assertEqual(len(protocol["shared"]["runtime_dependencies"]["pythonpath_submodules"]), 2)
         self.assertIn("nvidia-smi", protocol["shared"]["runtime_dependencies"]["host_cli_tools"])
-        self.assertIn("sleep", protocol["shared"]["runtime_dependencies"]["host_cli_tools"])
+        self.assertIn("git", protocol["shared"]["runtime_dependencies"]["host_cli_tools"])
 
 
     def test_dev_gate_rejects_incomplete_evidence(self) -> None:

@@ -178,14 +178,26 @@ def _chat(client: Any, *, model_id: str, messages: list[dict[str, str]], schema:
     }
 
 
-def structured_ceiling(manifest: Path, output: Path) -> dict[str, Any]:
+BUILDERS = ("legacy_r108", "stitch_v2", "stitch_then_search_v2")
+
+
+def _language_resolver(builder: str, case: Mapping[str, Any]):
+    if builder == "legacy_r108":
+        return build_resolver(disabled_backbones=set(case.get("disabled_backbones", [])))
+    if builder not in BUILDERS:
+        raise ValueError(f"Unknown SMB builder: {builder}")
+    from experiments.smb_dynamic_builders import build_resolver as dynamic_resolver
+    return dynamic_resolver(builder.removesuffix("_v2"), contract="v2")
+
+
+def structured_ceiling(manifest: Path, output: Path, *, builder: str = "legacy_r108") -> dict[str, Any]:
     frozen = json.loads(manifest.read_text())
     records = []
     for case in frozen["cases"]:
         if case.get("role") != "valid_target":
             continue
         spec = parser_payload_to_spec(case["expected"])
-        result = build_resolver().resolve(spec, allow_search=True, max_evaluator_calls=64)
+        result = _language_resolver(builder, case).resolve(spec, allow_search=True, max_evaluator_calls=64)
         payload = result.as_dict(include_level=False)
         records.append({
             "case_id": case["case_id"],
@@ -194,9 +206,11 @@ def structured_ceiling(manifest: Path, output: Path) -> dict[str, Any]:
             "selected_target": payload["selected_target"],
             "evaluator_calls": payload["evaluator_calls"],
             "level_sha256": payload["level_sha256"],
+            "takeoff_audit": (result.evaluation_info or {}).get("takeoff_audit"),
         })
     result = {
         "run_id": RUN_ID,
+        "builder": builder,
         "arm": "structured-no-llm-resolver",
         "manifest_sha256": hashlib.sha256(manifest.read_bytes()).hexdigest(),
         "cases": len(records),
@@ -209,19 +223,18 @@ def structured_ceiling(manifest: Path, output: Path) -> dict[str, Any]:
 
 
 def resolve_language_spec(
-    parsed: Mapping[str, Any], case: Mapping[str, Any]
+    parsed: Mapping[str, Any], case: Mapping[str, Any], *, builder: str = "legacy_r108"
 ):
     """Resolve one admitted parse while preserving case-level search controls."""
 
-    disabled = set(case.get("disabled_backbones", []))
-    return build_resolver(disabled_backbones=disabled).resolve(
+    return _language_resolver(builder, case).resolve(
         parser_payload_to_spec(parsed),
         allow_search=True,
         max_evaluator_calls=int(case.get("max_evaluator_calls", 64)),
     )
 
 
-def run_language(manifest: Path, base_url: str, output: Path, *, model_id: str, revision: str, seed: int = SEED) -> dict[str, Any]:
+def run_language(manifest: Path, base_url: str, output: Path, *, model_id: str, revision: str, seed: int = SEED, builder: str = "legacy_r108") -> dict[str, Any]:
     from openai import OpenAI
 
     frozen = json.loads(manifest.read_text())
@@ -258,7 +271,7 @@ def run_language(manifest: Path, base_url: str, output: Path, *, model_id: str, 
         resolution = None
         if disposition["status"] == "resolved":
             try:
-                resolution = resolve_language_spec(parsed, case)
+                resolution = resolve_language_spec(parsed, case, builder=builder)
             except (KeyError, TypeError, ValueError) as exc:
                 resolution = {"status": "invalid_request", "errors": [str(exc)]}
         resolution_payload = resolution.as_dict(include_level=True) if hasattr(resolution, "as_dict") else resolution
@@ -319,6 +332,7 @@ def run_language(manifest: Path, base_url: str, output: Path, *, model_id: str, 
     }
     result = {
         "run_id": RUN_ID,
+        "builder": builder,
         "split": frozen.get("split", "exposed_regression"),
         "execution_complete": criteria["execution_complete"],
         "scientific_gate_pass": all(criteria.values()),
@@ -342,6 +356,7 @@ def main() -> None:
     ceiling = sub.add_parser("structured-ceiling")
     ceiling.add_argument("--manifest", type=Path, required=True)
     ceiling.add_argument("--output", type=Path, required=True)
+    ceiling.add_argument("--builder", choices=BUILDERS, default="stitch_v2")
     run = sub.add_parser("run-language")
     run.add_argument("--manifest", type=Path, required=True)
     run.add_argument("--base-url", required=True)
@@ -349,15 +364,16 @@ def main() -> None:
     run.add_argument("--model-id", required=True)
     run.add_argument("--revision", required=True)
     run.add_argument("--seed", type=int, default=SEED)
+    run.add_argument("--builder", choices=BUILDERS, default="stitch_v2")
     args = parser.parse_args()
     if args.command == "build-manifests":
         payload = write_manifests(args.output)
     elif args.command == "structured-ceiling":
-        payload = structured_ceiling(args.manifest, args.output)
+        payload = structured_ceiling(args.manifest, args.output, builder=args.builder)
     else:
         payload = run_language(
             args.manifest, args.base_url, args.output,
-            model_id=args.model_id, revision=args.revision, seed=args.seed,
+            model_id=args.model_id, revision=args.revision, seed=args.seed, builder=args.builder,
         )
     print(json.dumps(payload, indent=2, sort_keys=True))
 

@@ -1,0 +1,7536 @@
+{
+  "certified": {
+    "coins_after_lead": [
+      {
+        "family": "coins",
+        "params": {
+          "count": 1,
+          "spacing": 1
+        }
+      },
+      {
+        "family": "coins",
+        "params": {
+          "count": 1,
+          "spacing": 3
+        }
+      },
+      {
+        "family": "coins",
+        "params": {
+          "count": 2,
+          "spacing": 2
+        }
+      },
+      {
+        "family": "coins",
+        "params": {
+          "count": 2,
+          "spacing": 3
+        }
+      },
+      {
+        "family": "coins",
+        "params": {
+          "count": 3,
+          "spacing": 2
+        }
+      },
+      {
+        "family": "coins",
+        "params": {
+          "count": 3,
+          "spacing": 1
+        }
+      },
+      {
+        "family": "coins",
+        "params": {
+          "count": 3,
+          "spacing": 3
+        }
+      },
+      {
+        "family": "coins",
+        "params": {
+          "count": 4,
+          "spacing": 1
+        }
+      },
+      {
+        "family": "coins",
+        "params": {
+          "count": 4,
+          "spacing": 3
+        }
+      },
+      {
+        "family": "coins",
+        "params": {
+          "count": 5,
+          "spacing": 2
+        }
+      },
+      {
+        "family": "coins",
+        "params": {
+          "count": 5,
+          "spacing": 3
+        }
+      }
+    ],
+    "coins_after_stomps": [
+      {
+        "family": "coins",
+        "params": {
+          "count": 1,
+          "spacing": 1
+        }
+      },
+      {
+        "family": "coins",
+        "params": {
+          "count": 1,
+          "spacing": 3
+        }
+      },
+      {
+        "family": "coins",
+        "params": {
+          "count": 2,
+          "spacing": 2
+        }
+      },
+      {
+        "family": "coins",
+        "params": {
+          "count": 2,
+          "spacing": 3
+        }
+      },
+      {
+        "family": "coins",
+        "params": {
+          "count": 3,
+          "spacing": 2
+        }
+      },
+      {
+        "family": "coins",
+        "params": {
+          "count": 3,
+          "spacing": 1
+        }
+      },
+      {
+        "family": "coins",
+        "params": {
+          "count": 3,
+          "spacing": 3
+        }
+      },
+      {
+        "family": "coins",
+        "params": {
+          "count": 4,
+          "spacing": 1
+        }
+      },
+      {
+        "family": "coins",
+        "params": {
+          "count": 4,
+          "spacing": 3
+        }
+      },
+      {
+        "family": "coins",
+        "params": {
+          "count": 5,
+          "spacing": 1
+        }
+      },
+      {
+        "family": "coins",
+        "params": {
+          "count": 5,
+          "spacing": 3
+        }
+      }
+    ],
+    "coins_before_exit": [],
+    "exit": [
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 1,
+          "width": 8,
+          "x": 7
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 1,
+          "width": 8,
+          "x": 5
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 1,
+          "width": 8,
+          "x": 6
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 2,
+          "width": 8,
+          "x": 5
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 2,
+          "width": 8,
+          "x": 6
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 2,
+          "width": 8,
+          "x": 7
+        }
+      },
+      {
+        "family": "gap",
+        "params": {
+          "gap": 2,
+          "width": 8,
+          "x": 5
+        }
+      },
+      {
+        "family": "gap",
+        "params": {
+          "gap": 2,
+          "width": 8,
+          "x": 4
+        }
+      },
+      {
+        "family": "gap",
+        "params": {
+          "gap": 3,
+          "width": 8,
+          "x": 4
+        }
+      },
+      {
+        "family": "gap",
+        "params": {
+          "gap": 3,
+          "width": 8,
+          "x": 3
+        }
+      }
+    ],
+    "jump": [
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 1,
+          "width": 6,
+          "x": 3
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 1,
+          "width": 6,
+          "x": 2
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 1,
+          "width": 6,
+          "x": 4
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 2,
+          "width": 6,
+          "x": 2
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 2,
+          "width": 6,
+          "x": 3
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 2,
+          "width": 6,
+          "x": 4
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 3,
+          "width": 6,
+          "x": 2
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 3,
+          "width": 6,
+          "x": 3
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 3,
+          "width": 6,
+          "x": 4
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 1,
+          "width": 8,
+          "x": 2
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 1,
+          "width": 8,
+          "x": 3
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 1,
+          "width": 8,
+          "x": 4
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 2,
+          "width": 8,
+          "x": 2
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 2,
+          "width": 8,
+          "x": 3
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 2,
+          "width": 8,
+          "x": 4
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 3,
+          "width": 8,
+          "x": 2
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 3,
+          "width": 8,
+          "x": 3
+        }
+      },
+      {
+        "family": "obstacle",
+        "params": {
+          "height": 3,
+          "width": 8,
+          "x": 4
+        }
+      },
+      {
+        "family": "gap",
+        "params": {
+          "gap": 2,
+          "width": 6,
+          "x": 2
+        }
+      },
+      {
+        "family": "gap",
+        "params": {
+          "gap": 2,
+          "width": 6,
+          "x": 3
+        }
+      },
+      {
+        "family": "gap",
+        "params": {
+          "gap": 3,
+          "width": 6,
+          "x": 2
+        }
+      },
+      {
+        "family": "gap",
+        "params": {
+          "gap": 2,
+          "width": 8,
+          "x": 2
+        }
+      },
+      {
+        "family": "gap",
+        "params": {
+          "gap": 2,
+          "width": 8,
+          "x": 3
+        }
+      },
+      {
+        "family": "gap",
+        "params": {
+          "gap": 3,
+          "width": 8,
+          "x": 2
+        }
+      },
+      {
+        "family": "gap",
+        "params": {
+          "gap": 3,
+          "width": 8,
+          "x": 3
+        }
+      }
+    ],
+    "sep": [
+      {
+        "family": "corridor",
+        "params": {
+          "width": 4
+        }
+      },
+      {
+        "family": "corridor",
+        "params": {
+          "width": 2
+        }
+      },
+      {
+        "family": "corridor",
+        "params": {
+          "width": 6
+        }
+      }
+    ],
+    "stomp": [
+      {
+        "family": "stomp",
+        "params": {
+          "enemy_x": 6,
+          "width": 10
+        }
+      },
+      {
+        "family": "stomp",
+        "params": {
+          "enemy_x": 4,
+          "width": 8
+        }
+      },
+      {
+        "family": "stomp",
+        "params": {
+          "enemy_x": 6,
+          "width": 8
+        }
+      },
+      {
+        "family": "stomp",
+        "params": {
+          "enemy_x": 4,
+          "width": 12
+        }
+      },
+      {
+        "family": "stomp",
+        "params": {
+          "enemy_x": 6,
+          "width": 12
+        }
+      },
+      {
+        "family": "stomp",
+        "params": {
+          "enemy_x": 8,
+          "width": 12
+        }
+      }
+    ],
+    "tail": [
+      {
+        "family": "corridor",
+        "params": {
+          "width": 4
+        }
+      },
+      {
+        "family": "corridor",
+        "params": {
+          "width": 8
+        }
+      },
+      {
+        "family": "corridor",
+        "params": {
+          "width": 2
+        }
+      }
+    ]
+  },
+  "counts": {
+    "coins_after_lead": {
+      "candidates": 15,
+      "certified": 11
+    },
+    "coins_after_stomps": {
+      "candidates": 15,
+      "certified": 11
+    },
+    "coins_before_exit": {
+      "candidates": 15,
+      "certified": 0
+    },
+    "exit": {
+      "candidates": 10,
+      "certified": 10
+    },
+    "jump": {
+      "candidates": 29,
+      "certified": 25
+    },
+    "sep": {
+      "candidates": 4,
+      "certified": 3
+    },
+    "stomp": {
+      "candidates": 8,
+      "certified": 6
+    },
+    "tail": {
+      "candidates": 3,
+      "certified": 3
+    }
+  },
+  "created_utc": "2026-10-06T16:51:04.747865+00:00",
+  "evaluator_calls": 554,
+  "lead": {
+    "family": "corridor",
+    "params": {
+      "width": 4
+    }
+  },
+  "library_sha256": "370c4965d73b6acde05cac97bf33ccad1d25160249263301331947be66e5d128",
+  "procedure": "fixed parameter grid x fixed composition contexts; A* exact, stomp-only kills, no fall kills, 2 identical repeats",
+  "rows": [
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "alone",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "259b031c0b7ab7735adf781adb1f93b1e3fe8f23e1795a960dbfe07947a9384a",
+          "observed": [
+            0,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "52382c3465fa60b27495ae452dc664c841cdfd4882cd051a61d466a82299ffb9",
+          "observed": [
+            1,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "798ca40af405cff993ef1852bd55df95ded5059e8d9f9795646f01d5f1ec799d",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_two_stomps_jump",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "be0eb67d21f2c1d742b54dcaa7a8fae2f837868b74605c9500c675a45f208fa0",
+          "observed": [
+            2,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 50
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 1,
+          "width": 8,
+          "x": 7
+        }
+      },
+      "role": "exit",
+      "token": "obstacle(height=1,width=8,x=7)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "alone",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "a4646ed46e48362723f0745dc0726b0f95ac3ed3c1ff470680c378fe5e6495a4",
+          "observed": [
+            0,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "ea461302d1924a7946edd813d7a551b5c074a14645f371ba4a7928c1c284b2e8",
+          "observed": [
+            1,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "fa34e0f638fe06d27610deb5a2f9fd0d20f32200f327c564b829a42a060c929f",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_two_stomps_jump",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "f8eda49861c08e385cb264332ebc2249a44112548174c9c11232c6cc5d64d8e0",
+          "observed": [
+            2,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 50
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 1,
+          "width": 8,
+          "x": 5
+        }
+      },
+      "role": "exit",
+      "token": "obstacle(height=1,width=8,x=5)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "alone",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "a076bb2b64e11b478409dc4946a6e48107ed06bff17b43acaf9a5800a40a9fa4",
+          "observed": [
+            0,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "8a7920be7ca3d68a9db9a7c631277d5d0c37b83248918555de28c2c6dc816a00",
+          "observed": [
+            1,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "dfa09bba05592a541b54ec74c6d699ab5c19a520d7b720fc73a71a47ec8b5d94",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_two_stomps_jump",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "af3fd06ccc29ef7132d754da39616953aa48917ee2c8549a86387d8b03439ed3",
+          "observed": [
+            2,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 50
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 1,
+          "width": 8,
+          "x": 6
+        }
+      },
+      "role": "exit",
+      "token": "obstacle(height=1,width=8,x=6)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "alone",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "c489706dfff533887ba1b62c4e03bf7479a81cb041b40333ddaebea4bc25986f",
+          "observed": [
+            0,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "1ad96b67ab472a83f7d62a8a3dec09c28975dd607da4f677188a0c22ca8558a5",
+          "observed": [
+            1,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "0fb04933be95be9e3411065f91377512a0d923dfcc5d0459f15b7f0387aae63d",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_two_stomps_jump",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "ea373f94581f859599705bcddf728562abe093c7c33294aabc0b864d6ec2e099",
+          "observed": [
+            2,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 50
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 2,
+          "width": 8,
+          "x": 5
+        }
+      },
+      "role": "exit",
+      "token": "obstacle(height=2,width=8,x=5)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "alone",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "2d19204727793f6bad036b87c3ef990d4e2334932cfdc17f99f0246f06e51083",
+          "observed": [
+            0,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "cea14ddad4c75253326c2f9b5f99f56df73bc2a3ca33d1fb4bd8a7f5108d550a",
+          "observed": [
+            1,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "4f8182002be88eb7c7f7a30b4c358be62e7ffbab74b7cd4e0210a29cd15ed0b4",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_two_stomps_jump",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "5a9a7f9b18b4a4528afaaa666d16621bee2468efe911bf42f078799d452eaa8c",
+          "observed": [
+            2,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 50
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 2,
+          "width": 8,
+          "x": 6
+        }
+      },
+      "role": "exit",
+      "token": "obstacle(height=2,width=8,x=6)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "alone",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "c5b2b0c472e3bf7c24668ab3b77c951adb2ff8ffcf526bc9c1fb4baf80f84097",
+          "observed": [
+            0,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "525f32cc696d931c65d04a2948d7c56e51082a340a7bc82bb569b36c6a6c821f",
+          "observed": [
+            1,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "cdc7eb9299a97fe929ff4f51596c89c54174d6488590c5cdbb7b616b2883a600",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_two_stomps_jump",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "5704da19c314313cda07064cee3028f31ad3545e0b329ce67d8787fb91000b61",
+          "observed": [
+            2,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 50
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 2,
+          "width": 8,
+          "x": 7
+        }
+      },
+      "role": "exit",
+      "token": "obstacle(height=2,width=8,x=7)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "alone",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "9246848250ee2d6696afc6f48fa5a15686f18120250f4db0ab455851ae563701",
+          "observed": [
+            0,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "f5ac2bab5af3a9636e650f4e1e85b8f2ca51457a5855355a162c132967b0a5cf",
+          "observed": [
+            1,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "719aa4785413cc0a6550ab03603b14ee43e22a30379dd3e0eb2b6f8ebe2890c8",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_two_stomps_jump",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "9597df8066c6b24ce284b43c667d44152eab6d1f2cdb5d615ae8eef05df7c4e4",
+          "observed": [
+            2,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 50
+        }
+      ],
+      "patch": {
+        "family": "gap",
+        "params": {
+          "gap": 2,
+          "width": 8,
+          "x": 5
+        }
+      },
+      "role": "exit",
+      "token": "gap(gap=2,width=8,x=5)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "alone",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "bcd90343f501a24ee66b2559c9172a1051e6d0c24294df65259c138fbf48f879",
+          "observed": [
+            0,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "de01952083d992497c01b367f43db3794ff8f666f869acfd8092403e3c7361a1",
+          "observed": [
+            1,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "b3f418a96f5ebc7779e674d215901bd22e73f95c13b27b2847a3b472974dc0a9",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_two_stomps_jump",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "de20c0810ddd51568f2e9d9462dddf32439a72351530cde0e2f57d1086e3328b",
+          "observed": [
+            2,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 50
+        }
+      ],
+      "patch": {
+        "family": "gap",
+        "params": {
+          "gap": 2,
+          "width": 8,
+          "x": 4
+        }
+      },
+      "role": "exit",
+      "token": "gap(gap=2,width=8,x=4)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "alone",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "7d40d02f9d1c16355abfe6b6597e7e692f61259d6b61ff613fc0b7b2f6305a43",
+          "observed": [
+            0,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "214689e9a47efe01c66efa86af79e66158a7fae5d3f20b26072d0835ec9004b0",
+          "observed": [
+            1,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "18adfa3fab6e873235a641aeb69940d124bafa9dec8d916d34ff6180e3614221",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_two_stomps_jump",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "e05081dc0c1c298a32f5b5eb024c0fa8b600a14d4e975adf94bd10d170b73ca3",
+          "observed": [
+            2,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 50
+        }
+      ],
+      "patch": {
+        "family": "gap",
+        "params": {
+          "gap": 3,
+          "width": 8,
+          "x": 4
+        }
+      },
+      "role": "exit",
+      "token": "gap(gap=3,width=8,x=4)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "alone",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "4e91ffed64ca4c7f791994ac2752e210cc7d6729980a6cc604a9eda37d05ef3d",
+          "observed": [
+            0,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "96fc632d4c9f046f8dd453e185592962923f4ac7adb2169b4c1c74bf9e93fad3",
+          "observed": [
+            1,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "5070c0d1ca65cafa7f70df05f87ca2315842b5a1e14a68246f07556b463bcdd7",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_two_stomps_jump",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "f259586f16f158d28867fe3c7f37aaefa4df5e0624e2034f9f5dc3280acd9b9f",
+          "observed": [
+            2,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 50
+        }
+      ],
+      "patch": {
+        "family": "gap",
+        "params": {
+          "gap": 3,
+          "width": 8,
+          "x": 3
+        }
+      },
+      "role": "exit",
+      "token": "gap(gap=3,width=8,x=3)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "alone_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "a3a644db46f6c3175740f41a2561589109832a2953c8b2725b2c955011e5124a",
+          "observed": [
+            1,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "pair_tail",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "a179be7fa761a0f773547ed25f0b989cc1e7f189bf666f3ca30bf91e65fa8f72",
+          "observed": [
+            2,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 36
+        },
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "52382c3465fa60b27495ae452dc664c841cdfd4882cd051a61d466a82299ffb9",
+          "observed": [
+            1,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "before_jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "d5e119820863e9ba33d2f8352a36f1135da3fc8c8144d82c5c06be99d635c9a5",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 36
+        }
+      ],
+      "patch": {
+        "family": "stomp",
+        "params": {
+          "enemy_x": 6,
+          "width": 10
+        }
+      },
+      "role": "stomp",
+      "token": "stomp(enemy_x=6,width=10)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "alone_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "a3a644db46f6c3175740f41a2561589109832a2953c8b2725b2c955011e5124a",
+          "observed": [
+            1,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "pair_tail",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "cbcb357e180f3d05bc7242eb2fd2ffe616d46e0a7eaaf775bc159947873d57d1",
+          "observed": [
+            2,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "52382c3465fa60b27495ae452dc664c841cdfd4882cd051a61d466a82299ffb9",
+          "observed": [
+            1,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "before_jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "38f15b7fa93311d2f115120929405b1280768d5607366b513f44866864d320e2",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 34
+        }
+      ],
+      "patch": {
+        "family": "stomp",
+        "params": {
+          "enemy_x": 4,
+          "width": 8
+        }
+      },
+      "role": "stomp",
+      "token": "stomp(enemy_x=4,width=8)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "alone_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "cea4643211c643c04af807927ddb20b8e67d27b6360439ad2ee646e51b11754b",
+          "observed": [
+            1,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "pair_tail",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "9a7a25475051512c21c2d99f4ff85e66ddb5db8cc58fb898143469ef574b9b9e",
+          "observed": [
+            2,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "17e4218541ad421ab9f314b7814dbf226b76799814d579d098c0c7368b347908",
+          "observed": [
+            1,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "before_jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "cbd42cb3e328f36c55b8d8626634518029a7ff527623a8077929e2d51036c41d",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 34
+        }
+      ],
+      "patch": {
+        "family": "stomp",
+        "params": {
+          "enemy_x": 6,
+          "width": 8
+        }
+      },
+      "role": "stomp",
+      "token": "stomp(enemy_x=6,width=8)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "alone_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "a4f5fd0f20593dafac3ca13db82c7ce59dbc46637d139e2caaf38b2835cec381",
+          "observed": [
+            1,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "pair_tail",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "7ce947693ca3599600b85c982b77c35d53252c0de21d3adbe64b51cf64c56fe0",
+          "observed": [
+            2,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 36
+        },
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "d0f31140c6d2db0fcab92d28522f32b9f2a247c33fd7a99d2e3f7172ead43a4c",
+          "observed": [
+            1,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "before_jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "f6593d4378166720d29d252ddc72970a1f91d30a1dfdae6a10674507fe1ce385",
+          "observed": [
+            1,
+            0,
+            1
+          ],
+          "passed": false,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 36
+        }
+      ],
+      "patch": {
+        "family": "stomp",
+        "params": {
+          "enemy_x": 4,
+          "width": 10
+        }
+      },
+      "role": "stomp",
+      "token": "stomp(enemy_x=4,width=10)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "alone_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "cea4643211c643c04af807927ddb20b8e67d27b6360439ad2ee646e51b11754b",
+          "observed": [
+            1,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "pair_tail",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "12cfa33243fb569362e208dc8116de4b5d4fb6f357b5c5ec143287d40b845378",
+          "observed": [
+            2,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 36
+        },
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "17e4218541ad421ab9f314b7814dbf226b76799814d579d098c0c7368b347908",
+          "observed": [
+            1,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "before_jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "26449ab424371c18ceab623c89227748f6288f83d94d372684b3ed60160dd0dd",
+          "observed": [
+            1,
+            0,
+            1
+          ],
+          "passed": false,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 36
+        }
+      ],
+      "patch": {
+        "family": "stomp",
+        "params": {
+          "enemy_x": 8,
+          "width": 10
+        }
+      },
+      "role": "stomp",
+      "token": "stomp(enemy_x=8,width=10)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "alone_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "394a6def9781139318fd762b586f2977be41bfd01f6f86c5c099526d7ac06547",
+          "observed": [
+            1,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "pair_tail",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "7ebaa58ed6c013c3d620a584d2fc7569c2c86a4c51a8b67410e8590d61d1505d",
+          "observed": [
+            2,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 40
+        },
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "52ba3e20d9e8f21f625304d1e663e71a8cff795c45d596ea98cf766dc371700a",
+          "observed": [
+            1,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "before_jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "56ad30931fcd70642bcd383ed23c267ab934c09122dd8794c291c7c4bda2c437",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 38
+        }
+      ],
+      "patch": {
+        "family": "stomp",
+        "params": {
+          "enemy_x": 4,
+          "width": 12
+        }
+      },
+      "role": "stomp",
+      "token": "stomp(enemy_x=4,width=12)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "alone_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "a4f5fd0f20593dafac3ca13db82c7ce59dbc46637d139e2caaf38b2835cec381",
+          "observed": [
+            1,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "pair_tail",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "43995b014058182417ddaffe1ebf93fb50c62e7359d56d30487619a115e7d411",
+          "observed": [
+            2,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 40
+        },
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "d0f31140c6d2db0fcab92d28522f32b9f2a247c33fd7a99d2e3f7172ead43a4c",
+          "observed": [
+            1,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "before_jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "2076df90f2931da0564b7a7ab3ded9f55ca2835f78a64fd322c7c7139fc36cf6",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 38
+        }
+      ],
+      "patch": {
+        "family": "stomp",
+        "params": {
+          "enemy_x": 6,
+          "width": 12
+        }
+      },
+      "role": "stomp",
+      "token": "stomp(enemy_x=6,width=12)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "alone_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "a3a644db46f6c3175740f41a2561589109832a2953c8b2725b2c955011e5124a",
+          "observed": [
+            1,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "pair_tail",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "ef093f5d90aa593a1eae1a7febe396f739ff597257a8a467d1ffa5920629c6c7",
+          "observed": [
+            2,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 40
+        },
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "52382c3465fa60b27495ae452dc664c841cdfd4882cd051a61d466a82299ffb9",
+          "observed": [
+            1,
+            0,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "before_jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "985e0982a15565921692b9c09796fcdef35aefd2fd0347320f6b8890e38ebdf2",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 38
+        }
+      ],
+      "patch": {
+        "family": "stomp",
+        "params": {
+          "enemy_x": 8,
+          "width": 12
+        }
+      },
+      "role": "stomp",
+      "token": "stomp(enemy_x=8,width=12)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "798ca40af405cff993ef1852bd55df95ded5059e8d9f9795646f01d5f1ec799d",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "d5e119820863e9ba33d2f8352a36f1135da3fc8c8144d82c5c06be99d635c9a5",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 36
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "e96f3e197d4ab7f3bf53bac60baca9f32596496a706cd469c5fc4a1d2b774ffb",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 1,
+          "width": 6,
+          "x": 3
+        }
+      },
+      "role": "jump",
+      "token": "obstacle(height=1,width=6,x=3)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "8589fc70d78c6828f73fbaad3eed12d0617d6b757e07e95241e92633a14349bd",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "9cec192127065b2ee3ff3f41da0c2895391afcd8e9fe3b6a33a27e5703a1c2a3",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 36
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "929fbf2e90cc7ae5b58f018e0fc4f97387ffba7df79739de88edb35b18e33563",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 1,
+          "width": 6,
+          "x": 2
+        }
+      },
+      "role": "jump",
+      "token": "obstacle(height=1,width=6,x=2)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "72e45d436a98367ab8aad9d9a93b4effe306d4d89daa59072f19537eec87693b",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "a635d626c1a451835bd16eaf579adfda26ecb18e9e291002d807e05a7058896b",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 36
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "f9bea8ffa3fb52bb0b77231a9413c58e9404b23f53bc1b32abf27d23c7a87887",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 1,
+          "width": 6,
+          "x": 4
+        }
+      },
+      "role": "jump",
+      "token": "obstacle(height=1,width=6,x=4)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "f8516b914bcbe05b14556161d26ce340f96e750b60cf31bc0af4e74980c98167",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "7fad40e1e56ac8617efbc94081a03f75ae4434619b0a10f25f6bacc3273564c4",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 36
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "4cff48d317b1af23129a294ebadd3afb3f332616fcc5a78fea35f7cb4d70ad4f",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 2,
+          "width": 6,
+          "x": 2
+        }
+      },
+      "role": "jump",
+      "token": "obstacle(height=2,width=6,x=2)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "b10e410dd009d9ea25957ed09c706849f42b49842bdf70bac9f941abc4074555",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "e670daf38493cc6300daa0032d434daa600b805864a30bc172c368c89c62056b",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 36
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "16f5695a4f3f33597d45e233c727d24895404af3c32dbaefd485728a3194dd1f",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 2,
+          "width": 6,
+          "x": 3
+        }
+      },
+      "role": "jump",
+      "token": "obstacle(height=2,width=6,x=3)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "937b8c9fb155145e55bb75efdca7c8b7cb5aedac7fdd2f7d9fb7baa6d62b48df",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "763590b9d95a32a00e5203be63f0478c24b2e46bdccf4d20821cb0253332ae9d",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 36
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "57f09e76f5fb99b2c65a6463d7be29b672beb31f30d1a89c7be788b57b989d98",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 2,
+          "width": 6,
+          "x": 4
+        }
+      },
+      "role": "jump",
+      "token": "obstacle(height=2,width=6,x=4)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "9b9b8f468debcc61a8280b3397a25a35e81fb0c2be525e8d61053a3ab9ec0fde",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "faa3c121a0b08dd007b0563d73bee075afccb4586410a980e1ea80ff9a6cb3ad",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 36
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "84dd76315447d8c6acd603457d61a73415dadd1a2085d5f008c1303caf44cec6",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 3,
+          "width": 6,
+          "x": 2
+        }
+      },
+      "role": "jump",
+      "token": "obstacle(height=3,width=6,x=2)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "27a118bf41b7d2dfd499255da2db6c961e4119c3ea4dbf5f5807d65e644d5ab3",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "2e90b86d5a572bbccda984eeb2f9bbb545bb8165f005f52e92831d1885bd9231",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 36
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "b5a8b8a6c88d6914f3f5087baecb19cac658fb9d595c966bb944bf0786be4526",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 3,
+          "width": 6,
+          "x": 3
+        }
+      },
+      "role": "jump",
+      "token": "obstacle(height=3,width=6,x=3)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "d407448e4647950322eeacab0e19f4bc16c27c68e1fef7fba5249be7efc40e6f",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "6f2bc66eb1b67cd3d8e0148988596f25b766e9dd11a8eeb37ac5cc21927a2bba",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 36
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "48e491fe40985c378bc11690b96fa54616c7b9ae62fe5b9e2ab56ac5e01c1184",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 3,
+          "width": 6,
+          "x": 4
+        }
+      },
+      "role": "jump",
+      "token": "obstacle(height=3,width=6,x=4)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "ef173a49a14b6452e6aeeab420b582f0e577a4f9061aa3e8f6d91b5117cee9e6",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "3282680007ededf9fdd748392a5883e304624778afad1d0e063fcf37199458d9",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 38
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "3b0d755b3237c8cc232e7068ad6c2e72bb22098312a0c6da01c62a74e8a58a79",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 36
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 1,
+          "width": 8,
+          "x": 2
+        }
+      },
+      "role": "jump",
+      "token": "obstacle(height=1,width=8,x=2)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "05d2631cc4595c94b8a5cdcea0cf66339fad9aba9f1d3cf8322327ae08f0eedf",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "2d80fc984b73bfd57adbcd1e4ba7c80fe577f2b4dc2772a9d1a3264c0e10063c",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 38
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "7e5662054e44981d878296a1fb396befc482416bc7af1b51691c495bec5abbbe",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 36
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 1,
+          "width": 8,
+          "x": 3
+        }
+      },
+      "role": "jump",
+      "token": "obstacle(height=1,width=8,x=3)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "41f2b0eba88e7d51d833029b967a5d348c705fc589c97668497a05f49cea5d1b",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "259ee4d4dd813fa3c3fdd816286a71720fe8b83dd277945f80294adec792f47d",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 38
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "0e55de29699b9af6ef4bfb36869adb5b1a2b1e876affda4ddbea7258e3a3970c",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 36
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 1,
+          "width": 8,
+          "x": 4
+        }
+      },
+      "role": "jump",
+      "token": "obstacle(height=1,width=8,x=4)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "9460bc446e602a545aecb8247a7e7afc46b034473078f528b4611ba911368d36",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "4316e5a9a75fab9d3005ad3ce1dc0e9b7e9c99a535fd45f721587d53e47dcd2e",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 38
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "4311aa76d1f0bbbb6b35dae123e7d6ae2f2c7847bc29047b7f6a1f05b3e534d4",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 36
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 2,
+          "width": 8,
+          "x": 2
+        }
+      },
+      "role": "jump",
+      "token": "obstacle(height=2,width=8,x=2)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "7e654a47737336d6932990b12c4622b00720eee3b7f4edf640a256aecb54a1eb",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "9256a1e02a318e51f9e02e5485e71f682d5443ca2837b40e7c42786f55e87a0d",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 38
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "ddaf62dc4de981fcc905ea35393f9f890957baa894896ccbf7ed6edcf0bd9d4a",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 36
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 2,
+          "width": 8,
+          "x": 3
+        }
+      },
+      "role": "jump",
+      "token": "obstacle(height=2,width=8,x=3)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "c080f5bbe5ceb977d54e4408d5fd7c8885057930d633bb6cacc70a0de3949aae",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "f29620f0c5f0f3db21540c19c4cc5beb89354e59f1288c9cdac0da4441b20028",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 38
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "c365e22da660ad216cf62d500568fa7359d38d07a51dcd93d11eb5dca8e0edbb",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 36
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 2,
+          "width": 8,
+          "x": 4
+        }
+      },
+      "role": "jump",
+      "token": "obstacle(height=2,width=8,x=4)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "ffad1c419190551e1bbecf94ebf8c27a173cd99cda35795b8402c59f8bb36a08",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "c46fb9cd475e6749c77438af9f4af5a970aef88da4c1d7fdd56a107eab051219",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 38
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "9f3863e40605152cdaa90b966f9c1dec75783bf2b8ca1609fb19522454f44682",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 36
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 3,
+          "width": 8,
+          "x": 2
+        }
+      },
+      "role": "jump",
+      "token": "obstacle(height=3,width=8,x=2)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "33502a1c6ed8e2003760514120ad8c9dcf4e12f3a47d3ba7911d6f80baf294d6",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "77b37890fa68438257918f32d857a94cf023326bcdf5e7f6a96b4afc53820bfc",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 38
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "fe74621ce90f931c18a9d5d377870afb3e445909a8c018efac621a146ed39a7c",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 36
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 3,
+          "width": 8,
+          "x": 3
+        }
+      },
+      "role": "jump",
+      "token": "obstacle(height=3,width=8,x=3)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "03493edda97296ca08cad5415986ea3f725eeaf575eda7c2dd79ace4982490b3",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "63b4241b1808e7c367e2195e98a3a19e964f2703a674f3d3495558b15e0f0f99",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 38
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "abb6017a54b60a123669a84fb33b7c95e1677263b549cb77ad66b2a08bbe42da",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 36
+        }
+      ],
+      "patch": {
+        "family": "obstacle",
+        "params": {
+          "height": 3,
+          "width": 8,
+          "x": 4
+        }
+      },
+      "role": "jump",
+      "token": "obstacle(height=3,width=8,x=4)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "2ffd82fe7ba620a0fac94ab0da39ceeeea734096fc47f05e6b4cf74a7ac37eeb",
+          "observed": [
+            0,
+            0,
+            1
+          ],
+          "passed": false,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "gap",
+        "params": {
+          "gap": 1,
+          "width": 6,
+          "x": 2
+        }
+      },
+      "role": "jump",
+      "token": "gap(gap=1,width=6,x=2)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "e5a734be0bf71726e91a95589341df9c0a8f164a7a3457ec210a74a85a8835e0",
+          "observed": [
+            0,
+            0,
+            1
+          ],
+          "passed": false,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "gap",
+        "params": {
+          "gap": 1,
+          "width": 6,
+          "x": 3
+        }
+      },
+      "role": "jump",
+      "token": "gap(gap=1,width=6,x=3)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "d51b9c9ff7d0533c1ff05d33cb0da0b14a43986bc7286fa18fe3cf71ac603d5d",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "b03e531db94fcaec7fc2b19e83fc0c8e8fb6627b0bc4cbad8db57b3185b337e5",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 36
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "ce491189a25220e3f019cdb86e0ee0a07c010f7e8ec910f3ae0c8c51cc2811a8",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "gap",
+        "params": {
+          "gap": 2,
+          "width": 6,
+          "x": 2
+        }
+      },
+      "role": "jump",
+      "token": "gap(gap=2,width=6,x=2)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "60aad58220fc3c0ac21f517ed8f955b00bd4d4f1fc2c13c37583ae7799b2756b",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "265f219c583f25bfba63358009fcfaa843c04116021a6cb65818b30ec0f6ae49",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 36
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "fa28646be8effc77f8ac8cd4b80f694a76ffb2998f6a1eb6a09f47a460c86ff0",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "gap",
+        "params": {
+          "gap": 2,
+          "width": 6,
+          "x": 3
+        }
+      },
+      "role": "jump",
+      "token": "gap(gap=2,width=6,x=3)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "26dbb732260d58f43f19f7a10bb6ab76d0c8b9d5a80cf95fcf882f6049d27c75",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "81b50e5ea9fc038d5022468afad7b793d09d960d8e0a9811cd37a4b5df3f052d",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 36
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "732288b192a39b82f5d774e4446e689107b2c637f10b09143a108b69d25ba9c5",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "gap",
+        "params": {
+          "gap": 3,
+          "width": 6,
+          "x": 2
+        }
+      },
+      "role": "jump",
+      "token": "gap(gap=3,width=6,x=2)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "629034e0ed75e20fd807103fe97eda556cdb3ab1f99539b0890c9c19e973aa60",
+          "observed": [
+            0,
+            0,
+            1
+          ],
+          "passed": false,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "gap",
+        "params": {
+          "gap": 1,
+          "width": 8,
+          "x": 2
+        }
+      },
+      "role": "jump",
+      "token": "gap(gap=1,width=8,x=2)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "ed230fd995fe7236590a1301db8087ab99114c2e1c49faeaa1fbc073e7566baa",
+          "observed": [
+            0,
+            0,
+            1
+          ],
+          "passed": false,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "gap",
+        "params": {
+          "gap": 1,
+          "width": 8,
+          "x": 3
+        }
+      },
+      "role": "jump",
+      "token": "gap(gap=1,width=8,x=3)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "533364ef4f8d06561d113554fed97646737fa40e3ddf1b0897a3f980c1a15e8f",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "cc0827482be90a9eee0c5cb0961d185022e68428bda9406ee5cc980cddc8d9f2",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 38
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "af3cfd37c178fb5c3dae9fc0b901716a9ebdcc7cb4b2b528cec5bbbdee7309c1",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 36
+        }
+      ],
+      "patch": {
+        "family": "gap",
+        "params": {
+          "gap": 2,
+          "width": 8,
+          "x": 2
+        }
+      },
+      "role": "jump",
+      "token": "gap(gap=2,width=8,x=2)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "9026f29ffeaa1271bad9e80b5aa6e5616dd066089af4bbac132c76c02a40f803",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "5b515d4298be3660b426c4cad50639dcb69c81694a445d9f22777e7cae086651",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 38
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "0827d94c4a74cccb77bf7ab57cdbd00e88173451797e6f19e5765814dbd28ea9",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 36
+        }
+      ],
+      "patch": {
+        "family": "gap",
+        "params": {
+          "gap": 2,
+          "width": 8,
+          "x": 3
+        }
+      },
+      "role": "jump",
+      "token": "gap(gap=2,width=8,x=3)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "00455143ffce03f42d09442b8036377ea98345a9bf9972f2136f3869b7fe4c90",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "e85e2d33930a0a1e2147520cbd38a1b53cf1f47112e13ba63d386925e94e6b61",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 38
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "a0190b8aecf0324d6c3d4f0881db70f02fd2bf5a0cb721a82b32d12a6655fd89",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 36
+        }
+      ],
+      "patch": {
+        "family": "gap",
+        "params": {
+          "gap": 3,
+          "width": 8,
+          "x": 2
+        }
+      },
+      "role": "jump",
+      "token": "gap(gap=3,width=8,x=2)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "before_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "689d8524b8c519b7ffe0ea2f4afd897b132fdcc288ac27971fcde91fc426c3ea",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomp",
+          "deterministic": true,
+          "expected": [
+            1,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "e5b24b2b515cc38cbb77ccdfdf4f6c9be8b2e007a9016934ffabed18ae6630be",
+          "observed": [
+            1,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 38
+        },
+        {
+          "context": "repeated",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            3
+          ],
+          "fall_kills": 0,
+          "level_sha256": "399d4f27ce24a02a17611f550d26482106ecad0ce2542ae53b42952674bb6dbe",
+          "observed": [
+            0,
+            0,
+            3
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 36
+        }
+      ],
+      "patch": {
+        "family": "gap",
+        "params": {
+          "gap": 3,
+          "width": 8,
+          "x": 3
+        }
+      },
+      "role": "jump",
+      "token": "gap(gap=3,width=8,x=3)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            0,
+            1,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "93a34743fc8debc257016f9e7830871d8bbbde5a59944eb261534d0ac6134750",
+          "observed": [
+            0,
+            1,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            1,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "ce65b77e78f0b5b27e2ae91ac1bbf477391dbc1d6e52662f15169bf360a47044",
+          "observed": [
+            1,
+            1,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            1,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "255c212ccb76c74e95812beb585884a23eeb086ade2ab9caf12ca2eea8709743",
+          "observed": [
+            0,
+            1,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            1,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "f5f9e5d4e9f70c2572a8615515162b24f19851b47a6cdad7b53aa2c7cc8f3700",
+          "observed": [
+            1,
+            1,
+            1
+          ],
+          "passed": false,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 44
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 1,
+          "spacing": 2
+        }
+      },
+      "role": "coins_after_lead",
+      "token": "coins(count=1,spacing=2)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            0,
+            1,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "a767a19dc8eb4328a6c27198d1fff7650c7ef1833238090ef674a9b346a8860d",
+          "observed": [
+            0,
+            1,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            1,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "0f2998834cb58821055690e2d883091f91c6bf55cc458e83f6eeb59b693c1455",
+          "observed": [
+            1,
+            1,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            1,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "71fe8f226bd7fe7276354aa57cf406d2e0adac4bc6055613894daa97c2ca9bae",
+          "observed": [
+            0,
+            1,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            1,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "f3a73bcdd3f052b00ce7d996f4861cb0d0da992a4ab1ab6f102551a26b529da6",
+          "observed": [
+            1,
+            1,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 43
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 1,
+          "spacing": 1
+        }
+      },
+      "role": "coins_after_lead",
+      "token": "coins(count=1,spacing=1)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            0,
+            1,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "0545196f1d51c4e7815143ea906ba55fb6d40237d69fc0bfcbed5e9ab0375626",
+          "observed": [
+            0,
+            1,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            1,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "762bd11d88fa7414aa5e68565998b4d4acecb46ce9b13bcba8268c762783ddae",
+          "observed": [
+            1,
+            1,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            1,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "2e97062e3b4400ce5a5beb670df3d1db24ab3518e7200b4748d605c5f489e15c",
+          "observed": [
+            0,
+            1,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            1,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "45bf607805413464357e2f951535bd41f8eb7df9912a118df77b1b45b20102ac",
+          "observed": [
+            1,
+            1,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 45
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 1,
+          "spacing": 3
+        }
+      },
+      "role": "coins_after_lead",
+      "token": "coins(count=1,spacing=3)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            0,
+            2,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "b44e63866e002614c98fcdf456119b799bf06acde14b1fa735cae740615fbf7a",
+          "observed": [
+            0,
+            2,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            2,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "ce7cd2fc7cc06b66dbf231e369c3a3ac0246064506035fe6078ea45ebd9d90d9",
+          "observed": [
+            1,
+            2,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            2,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "b42033c896db9048b93c1e1e937cb69d1b26ad3532e5c3e38eb13bd19c2b0d66",
+          "observed": [
+            0,
+            2,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            2,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "3805caef1e6083b948947117b6e8773c4bfba70f3d10b956617e69b9adaef4bc",
+          "observed": [
+            1,
+            2,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 46
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 2,
+          "spacing": 2
+        }
+      },
+      "role": "coins_after_lead",
+      "token": "coins(count=2,spacing=2)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            0,
+            2,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "ded0498d1d5d983f0886f5eba13bcf6cb4aa6d5472bfa19d971b99621593e898",
+          "observed": [
+            0,
+            2,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            2,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "615d9e0210c5add867ae89ff872e78f2a58929537511a08afd51a32cd472f8c4",
+          "observed": [
+            1,
+            2,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            2,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "4898a9aa4ab4b2c89997d1578edaec2d30bd9489ca6f504b7925ceffa8067578",
+          "observed": [
+            0,
+            2,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            2,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "80d0e869f2b411269fdac58c6f72a2201b041f5dc0688d749d3cf661d40f9828",
+          "observed": [
+            1,
+            2,
+            1
+          ],
+          "passed": false,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 44
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 2,
+          "spacing": 1
+        }
+      },
+      "role": "coins_after_lead",
+      "token": "coins(count=2,spacing=1)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            0,
+            2,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "02b8ffc1fef051fb7952b8cd5621e4e0e68229f858e141e431c9f53c21483364",
+          "observed": [
+            0,
+            2,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            2,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "4c594a9b0d5ec21d2ffe7ca8faee504761bc71b85f41ea911686f43415bd7ec7",
+          "observed": [
+            1,
+            2,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 34
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            2,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "ee667abec5c1991ffb7e616621969366ba35ce014d72c0f410fc091a0015325c",
+          "observed": [
+            0,
+            2,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 34
+        },
+        {
+          "context": "stomp_jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            2,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "e4df5f0a8259e2f408b69c7a5361ca5b0f1c96e0378d2b413223b91901949398",
+          "observed": [
+            1,
+            2,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 48
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 2,
+          "spacing": 3
+        }
+      },
+      "role": "coins_after_lead",
+      "token": "coins(count=2,spacing=3)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            0,
+            3,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "2b28ff348bdf0462d18854fd7405a272b5bc3bf3cb889e35e21bf254fc7d4f9f",
+          "observed": [
+            0,
+            3,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            3,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "214d768f1073df2f9b9f47fd46cd14177e24a52ad6cc020e890244fbb1853813",
+          "observed": [
+            1,
+            3,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 34
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            3,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "e0816343bb16ed1983063ed01e3569d12c7c7e1a2349ca964fb0a71b9cbf008a",
+          "observed": [
+            0,
+            3,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 34
+        },
+        {
+          "context": "stomp_jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            3,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "94b146145df36fa58aa923fb0dec9a68748e4164808df485c013786ba4bdcbec",
+          "observed": [
+            1,
+            3,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 48
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 3,
+          "spacing": 2
+        }
+      },
+      "role": "coins_after_lead",
+      "token": "coins(count=3,spacing=2)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            0,
+            3,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "2f3ee0a16931e4d1e193fef8a2d3cbc2b0588ce0d8ee0bd5adec099820693828",
+          "observed": [
+            0,
+            3,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            3,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "86747147cbac56d515238cd484537f20e4e1f08630df655c18d7ce885a1274f2",
+          "observed": [
+            1,
+            3,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            3,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "9eff32a7a9bfbc85fa0472ccdfbeee3f3b97bb4cbc42e7f3626cdfffc702b043",
+          "observed": [
+            0,
+            3,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            3,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "62b7edde2d573996587306d2ab8063c698ff3049886fafa0e681a179a7214652",
+          "observed": [
+            1,
+            3,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 45
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 3,
+          "spacing": 1
+        }
+      },
+      "role": "coins_after_lead",
+      "token": "coins(count=3,spacing=1)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            0,
+            3,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "08ee750a8f791868895405f6b84ea8bddaf7e925133c3027eadb5d0a6e63931b",
+          "observed": [
+            0,
+            3,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            3,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "1de90fa1c8c915483b4e7054f3b2b064e4b3b8afddf706ef62c5e998d9738cce",
+          "observed": [
+            1,
+            3,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 37
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            3,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "a1bcf52b44b123c33fe0f5fdf15e13402840263866d7255681af25902eee086a",
+          "observed": [
+            0,
+            3,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 37
+        },
+        {
+          "context": "stomp_jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            3,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "d91292fc68fb96f9d0f3cb80e4f121821dde2960148107d1b495a964af1025c0",
+          "observed": [
+            1,
+            3,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 51
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 3,
+          "spacing": 3
+        }
+      },
+      "role": "coins_after_lead",
+      "token": "coins(count=3,spacing=3)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            0,
+            4,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "5904b79e36dff227673ae9f746bae4e0d04c39fc75a85e174a617c79499ea5ae",
+          "observed": [
+            0,
+            4,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            4,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "e70856a82593a29d9a47bf190ab7f24ac8dc0532bb8bfcba5da65627ae2d2ac0",
+          "observed": [
+            1,
+            4,
+            1
+          ],
+          "passed": false,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 36
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 4,
+          "spacing": 2
+        }
+      },
+      "role": "coins_after_lead",
+      "token": "coins(count=4,spacing=2)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            0,
+            4,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "58c0c86a8aa2adcc9984db07574d9969ce442ff0d7bf85b43a152b963d3a5896",
+          "observed": [
+            0,
+            4,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            4,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "3925a307576fb84f55a5cb6614eace1466e14e95d229e3af53aacbaa702f861d",
+          "observed": [
+            1,
+            4,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            4,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "eb48a10f067efc2a67cab6edc4d86a4bceb0639255f0d515c6fdb6dc44ec850d",
+          "observed": [
+            0,
+            4,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            4,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "abde187ea00a7d028481c2a65c8250effcd58985964fb3c6a85ca726e564b3a2",
+          "observed": [
+            1,
+            4,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 46
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 4,
+          "spacing": 1
+        }
+      },
+      "role": "coins_after_lead",
+      "token": "coins(count=4,spacing=1)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            0,
+            4,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "1d0bcc0739d2c23638da95b360eba0a999453c0ddabdbeec46e9addec3251380",
+          "observed": [
+            0,
+            4,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            4,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "7bb781018156d7f0700b3e4345bc20e49fb7be71a0013e7e0478fe0ed3f52cda",
+          "observed": [
+            1,
+            4,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 40
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            4,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "0352142bcabc6a89db2643b7b7815cb3856ed53cada9f4c217bde9c726af5bfe",
+          "observed": [
+            0,
+            4,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 40
+        },
+        {
+          "context": "stomp_jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            4,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "d13c5e0da0b8512f3cf54787ac5a56716b8c52c185c568e6ca43670e10611398",
+          "observed": [
+            1,
+            4,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 54
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 4,
+          "spacing": 3
+        }
+      },
+      "role": "coins_after_lead",
+      "token": "coins(count=4,spacing=3)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            0,
+            5,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "75920516438e85f101b6656e8d6b54b84981a1fc60e4b2ca43e95f280210e472",
+          "observed": [
+            0,
+            5,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            5,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "35687f70a50b9f9fc3c153706b56449256298dfdead6e227e2eef38a592841f6",
+          "observed": [
+            1,
+            5,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 38
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            5,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "7ce0c35dca8fc6cd73c7cd44e454f7503199e875bfe29519a4e6aff693e9b914",
+          "observed": [
+            0,
+            5,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 38
+        },
+        {
+          "context": "stomp_jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            5,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "14f3f7e5cf03b1f66ba0892eca2fb5a73619a3193f0e79cbbf120a6f0970f27a",
+          "observed": [
+            1,
+            5,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 52
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 5,
+          "spacing": 2
+        }
+      },
+      "role": "coins_after_lead",
+      "token": "coins(count=5,spacing=2)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            0,
+            5,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "fa2d8db402aa9a92e354b9d5992f68c049f662fb4736f465e25e2f638b35fe44",
+          "observed": [
+            0,
+            5,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            5,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "967821670da3ce8b640e11e7513167399430dffe775535a4843f69903ff6ae9c",
+          "observed": [
+            1,
+            5,
+            1
+          ],
+          "passed": false,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 33
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 5,
+          "spacing": 1
+        }
+      },
+      "role": "coins_after_lead",
+      "token": "coins(count=5,spacing=1)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            0,
+            5,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "5a1c28638624f24871a9fd344ec560bfc26afc23a928863f75544672857032c4",
+          "observed": [
+            0,
+            5,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "stomp_tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            5,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "66e0c8d2ac47d10cff42c722230b85f87ecff0ad1564d232e30c79dc05d648ea",
+          "observed": [
+            1,
+            5,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 43
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            0,
+            5,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "78da1311e0c0f4090eda0d3cabc97c1343a5a3977110c451f6fcbb8d198acced",
+          "observed": [
+            0,
+            5,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 43
+        },
+        {
+          "context": "stomp_jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            5,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "65a6a343cd8c58e1af9187d41ba65ba9a767f474476bffb11b28df62376a2f7d",
+          "observed": [
+            1,
+            5,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 57
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 5,
+          "spacing": 3
+        }
+      },
+      "role": "coins_after_lead",
+      "token": "coins(count=5,spacing=3)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            1,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "ce40946cffbc41327fe039b1ab4db4510e57d476bcac40833e769d54293bfa34",
+          "observed": [
+            1,
+            1,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            1,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "6662563eb897b8762091d09c777e080a2d6658bb646cd5bfb892c2d3a1312313",
+          "observed": [
+            1,
+            1,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 34
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            1,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "d29c46a07d1eb7f9dcce8072393d03c5970a20aea0a8c8207c7ef88a6cef9f99",
+          "observed": [
+            1,
+            1,
+            1
+          ],
+          "passed": false,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 44
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 1,
+          "spacing": 2
+        }
+      },
+      "role": "coins_after_stomps",
+      "token": "coins(count=1,spacing=2)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            1,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "18f77293c870f6d0b727f860350c92dcb3e24a88d5f5fb76b29cee44dcab255c",
+          "observed": [
+            1,
+            1,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            1,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "ab32b7f424fda577091200d104655dc5f7dd0b351a20a52de556ac45d65e7377",
+          "observed": [
+            1,
+            1,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 33
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            1,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "3416dee79a46d92e0820eacbe0dba017835379009d675169a740f7977e177411",
+          "observed": [
+            1,
+            1,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 43
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 1,
+          "spacing": 1
+        }
+      },
+      "role": "coins_after_stomps",
+      "token": "coins(count=1,spacing=1)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            1,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "243beb4b873536ea86f63678c7c9372628c6e72bff8ca9615617313c46f13a68",
+          "observed": [
+            1,
+            1,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            1,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "64eac84c7bdb69fda959a45231b0a047c5b650697c1526bb2f67f8c9bf0624b4",
+          "observed": [
+            1,
+            1,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 35
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            1,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "b0219d1e3aa9bde39568faa0e09a6fb4923f678b1a5a878b20013ac58a74cff4",
+          "observed": [
+            1,
+            1,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 45
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 1,
+          "spacing": 3
+        }
+      },
+      "role": "coins_after_stomps",
+      "token": "coins(count=1,spacing=3)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            2,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "a2591e2c3deabae7b56fc5cdcda06ba69a8ca2707f42aaf491ba17a38db9414c",
+          "observed": [
+            1,
+            2,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            2,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "949d888ec971a73a551f73aebb246532fa841e209c3cabf0ca0ce7aff36e3997",
+          "observed": [
+            1,
+            2,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 36
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            2,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "82e733367fa8f22aeb74375df722974ebb54af7e70703b95340b73014b788da8",
+          "observed": [
+            1,
+            2,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 46
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 2,
+          "spacing": 2
+        }
+      },
+      "role": "coins_after_stomps",
+      "token": "coins(count=2,spacing=2)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            2,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "817a611685fa2bf0b6dafebdb8413fd95fb2a14c0847842b62f14722dbebe822",
+          "observed": [
+            1,
+            2,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            2,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "0dd4b891ef8c17f0f6250cb733142d6af8aab86b6a09bd96b02d3701de8ee00f",
+          "observed": [
+            1,
+            2,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 34
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            2,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "a8bff8693121efd878d73ebd5c842ddbee675e2739f35c301b0f0cffa7061c51",
+          "observed": [
+            1,
+            2,
+            1
+          ],
+          "passed": false,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 44
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 2,
+          "spacing": 1
+        }
+      },
+      "role": "coins_after_stomps",
+      "token": "coins(count=2,spacing=1)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            2,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "fa425a226ad21e5eb90f1bf6aed6aa41b73a888ea739f0438433be3add092153",
+          "observed": [
+            1,
+            2,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 34
+        },
+        {
+          "context": "exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            2,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "bdfeb6ed24a2dd2f6a7209fb32a1602ec37123a9926e5ae2019e0199cd08f794",
+          "observed": [
+            1,
+            2,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 38
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            2,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "e4d62e96d7d8d27c69a765bc763e7b41f1c473d28f1c955cb90ced3f6b3e50fe",
+          "observed": [
+            1,
+            2,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 48
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 2,
+          "spacing": 3
+        }
+      },
+      "role": "coins_after_stomps",
+      "token": "coins(count=2,spacing=3)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            3,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "b54b5197fec31411b424052d427191fa9fb867860ec5d4c87dd582b4fb9581df",
+          "observed": [
+            1,
+            3,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 34
+        },
+        {
+          "context": "exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            3,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "c830aa94e8bb2c50685e243b7476f1f9b9c1277085ff47c1da7d4a89734582cb",
+          "observed": [
+            1,
+            3,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 38
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            3,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "10f0589a1d9bb9b3d684a37fa5efcf4b4f3b6f6a270e35fc74ed625893e70471",
+          "observed": [
+            1,
+            3,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 48
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 3,
+          "spacing": 2
+        }
+      },
+      "role": "coins_after_stomps",
+      "token": "coins(count=3,spacing=2)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            3,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "a2c3c5135d413a05c30e85270cf9efda713cb87e4eaecf25b870d97fcb4940a9",
+          "observed": [
+            1,
+            3,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            3,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "0f64151e9cfb19d0481fb0f953d9cfb6dd18d9811cd894f2214f61d7760f56f4",
+          "observed": [
+            1,
+            3,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 35
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            3,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "154fd2249aa5149be83106d477e76b19a1467dc5f5f493e57b27f9f9bc077da5",
+          "observed": [
+            1,
+            3,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 45
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 3,
+          "spacing": 1
+        }
+      },
+      "role": "coins_after_stomps",
+      "token": "coins(count=3,spacing=1)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            3,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "734743a3b018ef8d5a9547c086a7e2c9311870a0941d6919152404840c683e11",
+          "observed": [
+            1,
+            3,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 37
+        },
+        {
+          "context": "exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            3,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "9e8080b23129bf72ef1031ff981214de975a53746812a599ba950b44dca1bc84",
+          "observed": [
+            1,
+            3,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 41
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            3,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "6b0b63e36a04621ea6153677847138cbbbe0c4a8dc504ce81b6a359d00c39266",
+          "observed": [
+            1,
+            3,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 51
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 3,
+          "spacing": 3
+        }
+      },
+      "role": "coins_after_stomps",
+      "token": "coins(count=3,spacing=3)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            4,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "b7e0bd1b3d4ea963801e0d6d9b357a9ec6b63fb95af889c022fd0f345ffcc272",
+          "observed": [
+            1,
+            4,
+            1
+          ],
+          "passed": false,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 36
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 4,
+          "spacing": 2
+        }
+      },
+      "role": "coins_after_stomps",
+      "token": "coins(count=4,spacing=2)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            4,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "a62f9104a1432375c2b6c4c847a122e67c18079016e0dd2409804704142b2eb4",
+          "observed": [
+            1,
+            4,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            4,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "c11d5e55d2c5d75a6d871895dd25d9670a244535612d2b875806fb3dcecf1f93",
+          "observed": [
+            1,
+            4,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 36
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            4,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "e42635c54bfa232464645635dbc06754a6d6e1fb1a8349787b600f32ceddf9e4",
+          "observed": [
+            1,
+            4,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 46
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 4,
+          "spacing": 1
+        }
+      },
+      "role": "coins_after_stomps",
+      "token": "coins(count=4,spacing=1)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            4,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "7fc295aa8549e62a93e1859e6c6df3411a2608509f509f2c7ebc10f6d5809e73",
+          "observed": [
+            1,
+            4,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 40
+        },
+        {
+          "context": "exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            4,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "acda1800e6bbb765058c0c1be36e944ec4f18d48ba3b57cd582c1353b741cd56",
+          "observed": [
+            1,
+            4,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 44
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            4,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "27f15dc607a7c2b2878d1ee9db11871282fcbe16e07bcbf5ec72a833ffeb81b9",
+          "observed": [
+            1,
+            4,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 54
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 4,
+          "spacing": 3
+        }
+      },
+      "role": "coins_after_stomps",
+      "token": "coins(count=4,spacing=3)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            5,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "9b6b6aecb707794a274c0b09af64c0473ddeef73f3e3d83e07d7928f872ab782",
+          "observed": [
+            1,
+            5,
+            1
+          ],
+          "passed": false,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 38
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 5,
+          "spacing": 2
+        }
+      },
+      "role": "coins_after_stomps",
+      "token": "coins(count=5,spacing=2)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            5,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "47945282817ce452ba6fadba2c0c11114951aa669effe4da3307d10a87a16399",
+          "observed": [
+            1,
+            5,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 33
+        },
+        {
+          "context": "exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            5,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "098c1c678ee21ea044f43d8b5ff09f25c64d23f85ce134ebf1e02dfeb7afaf91",
+          "observed": [
+            1,
+            5,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 37
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            5,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "615d3f85574957748b4c151b2642f0ea68e84f672eb14c0d9282213d14220006",
+          "observed": [
+            1,
+            5,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 47
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 5,
+          "spacing": 1
+        }
+      },
+      "role": "coins_after_stomps",
+      "token": "coins(count=5,spacing=1)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "tail",
+          "deterministic": true,
+          "expected": [
+            1,
+            5,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "b2971a659de6a2d81e82c91c2b6e8cdaf6390a325c17a8641fc8577291fa5d4d",
+          "observed": [
+            1,
+            5,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 43
+        },
+        {
+          "context": "exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            5,
+            1
+          ],
+          "fall_kills": 0,
+          "level_sha256": "68670ec95401c6aed5627284f4fe365f492db66b90750b33a1c3196c41984dfe",
+          "observed": [
+            1,
+            5,
+            1
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 47
+        },
+        {
+          "context": "jump_exit",
+          "deterministic": true,
+          "expected": [
+            1,
+            5,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "dae04511494e720180c4d33e40af6ab00ddfa80210ce66a628fcd5fcf5cc7aee",
+          "observed": [
+            1,
+            5,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 1,
+          "valid": true,
+          "width": 57
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 5,
+          "spacing": 3
+        }
+      },
+      "role": "coins_after_stomps",
+      "token": "coins(count=5,spacing=3)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            1,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "407b3dfedc06bdc26c26241061fe13274cfe165cf663fdd5e1cdfcf5ae9f1202",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": false,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 1,
+          "spacing": 2
+        }
+      },
+      "role": "coins_before_exit",
+      "token": "coins(count=1,spacing=2)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            1,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "e933f6aa0e00c4ece60c3644b743f2ebee48c5da575efdd98c910e314c2d1d7d",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": false,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 1,
+          "spacing": 1
+        }
+      },
+      "role": "coins_before_exit",
+      "token": "coins(count=1,spacing=1)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            1,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "caf22ee99d4e035f9b284b2251ec10068c6d5ce4a3c88f54e51e642eb7df1a25",
+          "observed": [
+            0,
+            0,
+            1
+          ],
+          "passed": false,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 1,
+          "spacing": 3
+        }
+      },
+      "role": "coins_before_exit",
+      "token": "coins(count=1,spacing=3)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            2,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "7313bc943f793cec8256a1cf0ef1addf298537253fcece1d832615f657842dc1",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": false,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 2,
+          "spacing": 2
+        }
+      },
+      "role": "coins_before_exit",
+      "token": "coins(count=2,spacing=2)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            2,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "68a7ecef137b6178ef818ee2561c53656668511b66491b3ddd6a469571c05a76",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": false,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 2,
+          "spacing": 1
+        }
+      },
+      "role": "coins_before_exit",
+      "token": "coins(count=2,spacing=1)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            2,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "5389ab98c89149c2e3ab39307b0d6ec100fb38e52af1c4ec72bcac7fa782706a",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": false,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 34
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 2,
+          "spacing": 3
+        }
+      },
+      "role": "coins_before_exit",
+      "token": "coins(count=2,spacing=3)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            3,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "cfd84abd5c21c92f43cc44dcc232a7eda706d4bb5abcfde8eaf4a9952fbc673f",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": false,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 34
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 3,
+          "spacing": 2
+        }
+      },
+      "role": "coins_before_exit",
+      "token": "coins(count=3,spacing=2)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            3,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "edf386814aade2c1ae5a02a42f0543402e185f4b0d6893778b610cdef7e51ba0",
+          "observed": [
+            0,
+            0,
+            1
+          ],
+          "passed": false,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 3,
+          "spacing": 1
+        }
+      },
+      "role": "coins_before_exit",
+      "token": "coins(count=3,spacing=1)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            3,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "b0390117a7e3d283e224bdc18dad9ab8f5c017245db7e834935eda9ccd514982",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": false,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 37
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 3,
+          "spacing": 3
+        }
+      },
+      "role": "coins_before_exit",
+      "token": "coins(count=3,spacing=3)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            4,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "32d227f0cfe52f8838fd59bc7e9c078923e41dfbe85b87c355c22deba6f23ea5",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": false,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 36
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 4,
+          "spacing": 2
+        }
+      },
+      "role": "coins_before_exit",
+      "token": "coins(count=4,spacing=2)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            4,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "9393b875d52f01fe2d47b5a1dec1dd93d265f26cd3f91607decd03f94a4c78a0",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": false,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 4,
+          "spacing": 1
+        }
+      },
+      "role": "coins_before_exit",
+      "token": "coins(count=4,spacing=1)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            4,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "051521d68e413c75dfbc3c7dca59f758d32ea1a2e8c9e54e3a4621cff6832f2a",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": false,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 40
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 4,
+          "spacing": 3
+        }
+      },
+      "role": "coins_before_exit",
+      "token": "coins(count=4,spacing=3)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            5,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "25bc049eb51e02d17270d01306b90f263c213adf50f3eb218179373c32c468e8",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": false,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 38
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 5,
+          "spacing": 2
+        }
+      },
+      "role": "coins_before_exit",
+      "token": "coins(count=5,spacing=2)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            5,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "83e1679a50efa880daeafa562661a496befc3bd48b56569c057444792edcbe28",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": false,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 33
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 5,
+          "spacing": 1
+        }
+      },
+      "role": "coins_before_exit",
+      "token": "coins(count=5,spacing=1)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "jump",
+          "deterministic": true,
+          "expected": [
+            0,
+            5,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "76a9348eabecf9362841f7abda05b42572d7421f32ae3b2606e88f0ea4ff2d81",
+          "observed": [
+            0,
+            0,
+            2
+          ],
+          "passed": false,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 43
+        }
+      ],
+      "patch": {
+        "family": "coins",
+        "params": {
+          "count": 5,
+          "spacing": 3
+        }
+      },
+      "role": "coins_before_exit",
+      "token": "coins(count=5,spacing=3)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "stomps_jumps",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "be0eb67d21f2c1d742b54dcaa7a8fae2f837868b74605c9500c675a45f208fa0",
+          "observed": [
+            2,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 50
+        },
+        {
+          "context": "stomps_tail",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "a179be7fa761a0f773547ed25f0b989cc1e7f189bf666f3ca30bf91e65fa8f72",
+          "observed": [
+            2,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 36
+        }
+      ],
+      "patch": {
+        "family": "corridor",
+        "params": {
+          "width": 4
+        }
+      },
+      "role": "sep",
+      "token": "corridor(width=4)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "stomps_jumps",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "515673b81f0fa7cae48044f493daed91727db12d1b11a7038c24885ad3ffbd7d",
+          "observed": [
+            2,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 44
+        },
+        {
+          "context": "stomps_tail",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "9a7a25475051512c21c2d99f4ff85e66ddb5db8cc58fb898143469ef574b9b9e",
+          "observed": [
+            2,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 32
+        }
+      ],
+      "patch": {
+        "family": "corridor",
+        "params": {
+          "width": 2
+        }
+      },
+      "role": "sep",
+      "token": "corridor(width=2)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "stomps_jumps",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "53b400a95186757d2d53ff957ebb01c3e0c1b54b2ecd737c25bdeb693b2eae24",
+          "observed": [
+            2,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 56
+        },
+        {
+          "context": "stomps_tail",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "43995b014058182417ddaffe1ebf93fb50c62e7359d56d30487619a115e7d411",
+          "observed": [
+            2,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 40
+        }
+      ],
+      "patch": {
+        "family": "corridor",
+        "params": {
+          "width": 6
+        }
+      },
+      "role": "sep",
+      "token": "corridor(width=6)"
+    },
+    {
+      "certified": false,
+      "checks": [
+        {
+          "context": "stomps_jumps",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            2
+          ],
+          "fall_kills": 0,
+          "level_sha256": "6330aa85b5bbddd3634015c3828e759a43caeb8b8b0e13eb06a6165240f57961",
+          "observed": [
+            2,
+            0,
+            2
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 62
+        },
+        {
+          "context": "stomps_tail",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "88d6ef3445034c2e21d175d37f4414bc21c3975acc8433f05d5cea441e072f6c",
+          "observed": [
+            2,
+            0,
+            1
+          ],
+          "passed": false,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 44
+        }
+      ],
+      "patch": {
+        "family": "corridor",
+        "params": {
+          "width": 8
+        }
+      },
+      "role": "sep",
+      "token": "corridor(width=8)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "alone",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "fc408c083877249644da46a6e98a15e8179f161d60cb45aaf8ebc50f0a35c5d7",
+          "observed": [
+            0,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomps",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "a179be7fa761a0f773547ed25f0b989cc1e7f189bf666f3ca30bf91e65fa8f72",
+          "observed": [
+            2,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 36
+        }
+      ],
+      "patch": {
+        "family": "corridor",
+        "params": {
+          "width": 4
+        }
+      },
+      "role": "tail",
+      "token": "corridor(width=4)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "alone",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "fc408c083877249644da46a6e98a15e8179f161d60cb45aaf8ebc50f0a35c5d7",
+          "observed": [
+            0,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomps",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "a5a991467648ba1d0d0530b117e4729386f8d7943b867deec5cc82612a6ca548",
+          "observed": [
+            2,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 40
+        }
+      ],
+      "patch": {
+        "family": "corridor",
+        "params": {
+          "width": 8
+        }
+      },
+      "role": "tail",
+      "token": "corridor(width=8)"
+    },
+    {
+      "certified": true,
+      "checks": [
+        {
+          "context": "alone",
+          "deterministic": true,
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "fc408c083877249644da46a6e98a15e8179f161d60cb45aaf8ebc50f0a35c5d7",
+          "observed": [
+            0,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 0,
+          "valid": true,
+          "width": 32
+        },
+        {
+          "context": "after_stomps",
+          "deterministic": true,
+          "expected": [
+            2,
+            0,
+            0
+          ],
+          "fall_kills": 0,
+          "level_sha256": "4e9861a2a649d4ea9bbbe21dc47f3e1e254da8585e3c8e3b529f945fa5db28ef",
+          "observed": [
+            2,
+            0,
+            0
+          ],
+          "passed": true,
+          "stomp_kills": 2,
+          "valid": true,
+          "width": 34
+        }
+      ],
+      "patch": {
+        "family": "corridor",
+        "params": {
+          "width": 2
+        }
+      },
+      "role": "tail",
+      "token": "corridor(width=2)"
+    }
+  ],
+  "schema_version": "smb-patch-library-v1"
+}

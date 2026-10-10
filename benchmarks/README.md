@@ -11,6 +11,8 @@ These files are sufficient to recreate the paper tasks without copying the origi
 | `smb/language.json` | Original exposed language-contract examples and guards needed by preflights and regression checks |
 | `smb/template_validation.json`, `smb/template_test.json` | Frozen bilingual language inputs, expected typed fields and guard dispositions |
 | `smb/static_language.json` | Seven static-control requests and one guard |
+| `smb/patches/patch_library_v2.json` | Certified ceiling-free patches and takeoff-audited development contexts for current SMB construction |
+| `smb/patches/patch_library.json` | Earlier corridor patch certification, retained for historical comparison |
 | `smb/backbones/` | Exactly 16 development levels used as runtime mechanic templates |
 | `smb/backbone_sources.json` | Only the provenance rows for those 16 templates, used by library preflight |
 | `smb/search_seeds/` | Compact development seed maps and their index for bounded simulator search |

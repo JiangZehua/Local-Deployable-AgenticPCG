@@ -1,0 +1,15 @@
+{
+  "source_repository": "https://github.com/JiangZehua/PromptEvoAgenticPCG",
+  "source_commit": "366c27822f13a35046a7041249a3f61671330aad",
+  "source_features": [
+    "PAPER-M8b ceiling-free patch stitching and takeoff audit",
+    "Six-domain metric input",
+    "Zero-weight Zelda prompt goal omission"
+  ],
+  "release_adaptations": [
+    "rpe_pcg imports mapped to experiments",
+    "Certified patch assets bundled under benchmarks/smb/patches",
+    "Public smoke and language CLI use contract v2",
+    "Existing Python language APIs preserve legacy defaults for historical tests"
+  ]
+}

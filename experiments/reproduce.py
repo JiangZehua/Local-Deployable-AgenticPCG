@@ -24,7 +24,7 @@ SUITES = ("smoke", "zelda-oracle", "z64", "zelda-validation", "zelda-test", "lad
           "binarydoor", "natural32", "language-validation", "language-test",
           "tools", "tool-loop", "scenes", "smb-baseline", "smb-pass4",
           "smb-stomp", "smb-jump", "smb-behavior", "smb-library",
-          "smb-static", "smb-static-baseline", "smb-static-language", "gemma4", "lmstudio")
+          "smb-dynamic", "smb-static", "smb-static-baseline", "smb-static-language", "gemma4", "lmstudio")
 
 
 def command(module: str, *args: object) -> list[str]:
@@ -99,9 +99,9 @@ def build_plan(args: argparse.Namespace) -> list[list[str]]:
             plan.append(command("paper_m6_natural32", "preflight", "--manifest", manifest,
                                 "--require-template-audit", "--output", out / "preflight.json"))
         plan += [command("paper_m1_smb_language", "structured-ceiling", "--manifest", manifest,
-                         "--output", out / "ceiling.json"),
+                         "--builder", "stitch_v2", "--output", out / "ceiling.json"),
                  command("paper_m1_smb_language", "run-language", *common, "--manifest", manifest,
-                         "--output", out / "model.json")]
+                         "--builder", "stitch_v2", "--output", out / "model.json")]
         if args.suite == "natural32":
             plan.append(command("paper_m6_natural32", "combine", "--manifest", manifest,
                                 "--model-result", out / "model.json", "--structured-ceiling", out / "ceiling.json",
@@ -153,6 +153,13 @@ def build_plan(args: argparse.Namespace) -> list[list[str]]:
             (["--sample", str(out / f"sample_{i}.json")] for i in range(4)), []),
             "--output", out / "evaluation.json"))
         return plan
+    if args.suite == "smb-dynamic":
+        return [command("paper_m8_smb_dynamic_builders", "grid", "--arms", "stitch_v2",
+                        "--workers", getattr(args, "workers", 1), "--output", out / "grid.json"),
+                command("paper_m8_smb_dynamic_builders", "audit", "--grid", out / "grid.json",
+                        "--workers", getattr(args, "workers", 1), "--output", out / "takeoff_audit.json"),
+                command("paper_m8_smb_dynamic_builders", "summary", "--grid", out / "grid.json",
+                        "--output", out / "summary.json")]
     if args.suite == "smb-static":
         return [command("r109_smb_static_playability", "--output", out / "gate.json")]
     if args.suite == "gemma4":
@@ -180,8 +187,11 @@ def main() -> None:
     parser.add_argument("--base-url", default="http://127.0.0.1:8000/v1")
     parser.add_argument("--gemma-mode", choices=["dev", "formal"], default="formal")
     parser.add_argument("--gguf", type=Path, help="Registered Q4_K_M file, hashed before the native LM Studio suite")
+    parser.add_argument("--workers", type=int, default=1, help="CPU processes for the SMB dynamic grid")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
+    if args.workers < 1:
+        parser.error("--workers must be positive")
     if args.model_id and not args.revision and args.suite != "lmstudio":
         parser.error("--model-id requires --revision to keep model provenance explicit")
     if args.suite == "gemma4" and (args.model_id or args.revision):

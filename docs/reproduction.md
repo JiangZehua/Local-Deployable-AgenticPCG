@@ -61,7 +61,8 @@ For a smaller Gemma qualification run, use `pcg-reproduce gemma4 --gemma-mode de
 | `smb-stomp` | Six development controls for the stomp operation |
 | `smb-jump` | Six development controls for the ground-jump operation |
 | `smb-behavior` | Six development controls for the combined behavior operation |
-| `smb-library` | The 16-backbone mechanic library, including its preflight and model interface |
+| `smb-dynamic` | 210-target CPU grid using ceiling-free v2 patches and a physical takeoff audit |
+| `smb-library` | Historical 16-backbone mechanic library, including its preflight and model interface |
 | `smb-static` | 15 deterministic validity/playability cases, no LLM |
 | `smb-static-baseline` | Eight static primitive-editing cases |
 | `smb-static-language` | Seven valid static requests + one guard |
@@ -70,7 +71,7 @@ For language suites, `ceiling.json` measures execution from the manifest's groun
 
 Dynamic SMB targets count **enemies defeated, coins collected, and voluntary ground jumps during the A* playthrough**. Stomp bounces are not ground jumps. Static targets count **pipe components, enemy tiles, coin tiles and block tiles**, while also requiring the level to pass the static structural checks and the simulated completion/coin-reachability gate. These contracts are intentionally separate.
 
-The resolver tries supported deterministic construction and the compact mechanic library, with bounded search for supported fallback cases. Its fixed backbones and search seeds are development inputs. Neither language test targets nor completed test trajectories are used as runtime templates.
+Fresh language CLI runs use certified ceiling-free patch stitching (`stitch_v2`) and require zero hidden takeoffs. The static adapter remains separate. The historical whole-level resolver can be selected with `--builder legacy_r108`. Neither language test targets nor completed test trajectories are runtime templates. See [SMB builders](smb-builders.md) for certification, bounded search and the six unknown zero-kill/zero-jump targets.
 
 To regenerate a structured ceiling alone:
 

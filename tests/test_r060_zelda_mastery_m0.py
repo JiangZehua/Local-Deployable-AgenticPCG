@@ -138,7 +138,26 @@ class R060BContractTests(unittest.TestCase):
         self.assertEqual(gaps["enemies"]["target"], 0)
         self.assertEqual(gaps["enemies"]["status"], "ok")
         _, _, enemy_goal = _zelda_goal_contract(config)
-        self.assertEqual(enemy_goal, "5. Have exactly 0 enemies (E)")
+        self.assertEqual(enemy_goal, "Have exactly 0 enemies (E)")
+
+    def test_zero_weight_path_goal_is_omitted_from_prompt(self) -> None:
+        from toolusepcg.config import _dict_to_config
+        from toolusepcg.optimizer.greedy import _numbered
+
+        raw = config_to_dict(load_config("configs/zelda.yaml"))
+        raw["targets"] = {k: v for k, v in raw["targets"].items()
+                          if k in ("players", "keys", "doors", "enemies")}
+        raw["scoring"]["w_path"] = 0.0
+        goal, instruction, enemy_goal = _zelda_goal_contract(_dict_to_config(raw))
+        self.assertIsNone(goal)
+        self.assertIsNone(instruction)
+        block = _numbered(["a", "b", goal, "c", enemy_goal])
+        self.assertEqual(block.splitlines()[-1], "4. Have exactly 3 enemies (E)")
+        self.assertNotIn("solution length", block.lower())
+
+        raw["scoring"]["w_path"] = 1.0
+        goal, _, _ = _zelda_goal_contract(_dict_to_config(raw))
+        self.assertIn("Maximize the solution length", goal)
 
     def test_regions_not_one_is_hard_invalid(self) -> None:
         config = load_config("configs/zelda.yaml")

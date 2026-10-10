@@ -29,6 +29,7 @@ RESOLUTION_STATUSES = frozenset(
 )
 
 EVALUATION_WITNESS_FIELDS = (
+    "takeoff_audit",
     "evaluation_mode",
     "simulation_called",
     "engine_executed",

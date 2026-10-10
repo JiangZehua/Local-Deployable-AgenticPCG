@@ -4,4 +4,7 @@ recursive-include benchmarks *.json *.txt
 recursive-include vendor *.py *.txt *.json *.png
 include README.md THIRD_PARTY.md
 include benchmarks/README.md
-recursive-include docs *.md *.png
+recursive-include docs *.md *.png *.json
+recursive-include requirements *.txt
+recursive-include scripts *.sh
+recursive-include tests *.py

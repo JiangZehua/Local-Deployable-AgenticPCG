@@ -6,7 +6,7 @@
 
 Companion implementation for *Enabling Agentic PCG with Harness-Controlled Local Models*.
 
-[Quick start](#quick-start) · [Reproduce the paper](#reproduce-the-paper) · [Deployment](docs/deployment.md) · [Inside the harness](docs/harness.md)
+[Project webpage](https://zehua-jiang.github.io/Local-Deployable-AgenticPCG/) · [Paper on SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7502203) · [Quick start](#quick-start) · [Reproduce the paper](#reproduce-the-paper) · [Deployment](docs/deployment.md) · [Inside the harness](docs/harness.md)
 
 </div>
 
@@ -41,16 +41,17 @@ python -m pip install -e ".[test]"
 pcg-reproduce smoke --output runs/smoke
 ```
 
-Open `runs/smoke/zelda.png` and `runs/smoke/smb.png`. The example constructs and verifies a Zelda level with path lengths **17 / 31** and a Mario playthrough with **3 kills / 5 collected coins / 1 ground jump**. It saves the levels, rendered images and `smoke.json` locally.
+Open `runs/smoke/zelda.png` and `runs/smoke/smb.png`. The example constructs and verifies a Zelda level with path lengths **17 / 31** and a Mario playthrough with **3 kills / 5 collected coins / 1 ground jump**. It uses ceiling-free certified patches and checks that every physical ground takeoff is counted. It saves the levels, rendered images and `smoke.json` locally. See [SMB builders](docs/smb-builders.md) for the corrected contract and historical comparisons.
 
-Two larger checks also run without a model:
+Three larger checks also run without a model:
 
 ```bash
 pcg-reproduce zelda-oracle --output runs/oracle
 pcg-reproduce smb-static --output runs/static-gate
+pcg-reproduce smb-dynamic --workers 4 --output runs/smb-v2
 ```
 
-These regenerate the 961-target Zelda feasibility check and the 15-case static SMB playability gate. For the regression suite, run `python -m pytest -q`.
+These regenerate the 961-target Zelda feasibility check, the 15-case static SMB playability gate, and the 210-target audited SMB construction grid. For the regression suite, run `python -m pytest -q`.
 
 ## Reproduce the paper
 
@@ -76,6 +77,7 @@ pcg-reproduce tools --output runs/tools
 | Transfer to BinaryDoor | `binarydoor` | 32 targets × 2 arms |
 | Natural-language control | `natural32`, `language-validation`, `language-test` | Natural-32 and fixed template splits |
 | Tool access and execution loop | `tools`, `tool-loop`, `scenes` | 36 tool episodes per comparison; 12 scenes + shared null per arm; 5 arms |
+| Audited Mario construction | `smb-dynamic` | 210 targets; ceiling-free patch stitching and physical takeoff audit |
 | Mario gameplay operations | `smb-baseline`, `smb-pass4`, `smb-stomp`, `smb-jump`, `smb-behavior`, `smb-library` | Primitive editing, sampling and mechanic tools |
 | Static Mario control | `smb-static`, `smb-static-baseline`, `smb-static-language` | Playability, primitive baseline and language contract |
 | Native laptop deployment | `lmstudio` | 132 episodes through the LM Studio SDK |
@@ -120,6 +122,8 @@ RPE_PCG_COORD_GRAMMAR=on python main.py \
   --extra-instruction "Create connected rooms while preserving the player, key, door and enemies." \
   --no-render-stats --no-render-sim --run-dir runs/my-rooms
 ```
+
+Metric requests can also set executable targets in all six domains through `--request` or a JSON `--request-spec`, with `--request-dry-run` for inspection. See [metric input](docs/metric-input.md).
 
 Inspect `final_level.txt`, `summary.json` and `trace.jsonl` in that run directory. For a new experiment, copy a configuration and change its targets or tools; keep the frozen paper manifests intact. See [harness configuration](docs/harness.md) for acceptance, feedback, recovery and protocol profiles.
 

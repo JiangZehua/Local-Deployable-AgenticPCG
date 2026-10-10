@@ -24,7 +24,8 @@ def jobs(model_id: str) -> list[dict]:
     m6 = json.loads((ROOT / "configs/paper_m6_natural32.json").read_text())
     for i, case in enumerate(m6["cases"]):
         result.append({"suite": "m6", "id": case["case_id"], "seed": 116000 + i,
-                       "cases": [case], "split": "mac_formal_natural32"})
+                       "cases": [case], "split": "mac_formal_natural32",
+                       "smb_builder": "stitch_v2"})
     cases = {c["target_id"]: c for c in json.loads((ROOT / "benchmarks/zelda/test721.json").read_text())["cases"]}
     for target in (ROOT / "configs/paper_m2_z64_target_ids.txt").read_text().splitlines():
         result.append({"suite": "z64", "id": target, "case": cases[target]})

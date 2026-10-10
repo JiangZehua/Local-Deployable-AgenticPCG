@@ -59,7 +59,8 @@ def main():
     if job['suite'] == 'm6':
         from experiments import paper_m1_smb_language as producer
         if args.cpu_only:
-            producer.structured_ceiling(args.job, args.output/'structured_ceiling.json')
+            producer.structured_ceiling(args.job, args.output/'structured_ceiling.json',
+                builder=job.get('smb_builder', 'legacy_r108'))
             return
         with lms.Client('127.0.0.1:1234') as client:
             def chat(_unused, *, model_id, messages, schema, schema_name, seed):
@@ -75,7 +76,8 @@ def main():
                     'latency_ms': round(response['elapsed_seconds']*1000)}
             producer._chat = chat
             producer.run_language(args.job, 'http://127.0.0.1:1234/v1', args.output/'result.json',
-                model_id=model, revision=job['model_sha256'], seed=job['seed'])
+                model_id=model, revision=job['model_sha256'], seed=job['seed'],
+                builder=job.get('smb_builder', 'legacy_r108'))
         return
 
     if job['suite'] == 'm7':

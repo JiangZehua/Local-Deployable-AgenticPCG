@@ -79,11 +79,17 @@ def _level_digest(level: Level) -> str:
     return hashlib.sha256(level.to_string().encode("utf-8")).hexdigest()
 
 
-def _zelda_goal_contract(config: Config) -> tuple[str, str, str]:
-    """Return mutually consistent path, action, and enemy instructions."""
+def _zelda_goal_contract(config: Config) -> tuple[str | None, str | None, str]:
+    """Return mutually consistent path, action, and enemy instructions.
+
+    Lines are unnumbered; the prompt numbers them. A maximize-type path goal is
+    omitted (``None``) when its scoring weight ``w_path`` is 0, because the
+    scorer would ignore it and the prompt must not ask for it.
+    """
     pk_cfg = config.targets.player_key
     kd_cfg = config.targets.key_door
     sol_cfg = config.targets.solution_length
+    path_weighted = float(config.scoring.w_path) != 0.0
 
     component_goals = []
     exact_components = False
@@ -96,41 +102,45 @@ def _zelda_goal_contract(config: Config) -> tuple[str, str, str]:
                 f"a {label} path length of exactly {target_cfg.value}"
             )
             exact_components = True
-        elif target_cfg and target_cfg.mode == "maximize":
+        elif target_cfg and target_cfg.mode == "maximize" and path_weighted:
             component_goals.append(f"the longest feasible {label} path")
 
     if component_goals:
-        path_goal = "3. Achieve " + " and ".join(component_goals)
+        path_goal = "Achieve " + " and ".join(component_goals)
         if exact_components:
             path_instruction = (
-                "3. Adjust paths only until the specified exact component "
+                "Adjust paths only until the specified exact component "
                 "lengths are reached; stop immediately once all hard "
                 "constraints and exact targets hold"
             )
         else:
-            path_instruction = "3. Increase the specified path lengths"
+            path_instruction = "Increase the specified path lengths"
     elif sol_cfg and sol_cfg.mode == "target":
         path_goal = (
-            "3. Achieve a solution length (player-to-key plus key-to-door) "
+            "Achieve a solution length (player-to-key plus key-to-door) "
             f"of exactly {sol_cfg.value}"
         )
         path_instruction = (
-            "3. Adjust the two paths only until their sum reaches the exact "
+            "Adjust the two paths only until their sum reaches the exact "
             "solution-length target; stop immediately once all hard "
             "constraints and the exact target hold"
         )
+    elif path_weighted:
+        path_goal = "Maximize the solution length (player-to-key plus key-to-door)"
+        path_instruction = "Then optimize for longer solution paths"
     else:
-        path_goal = (
-            "3. Maximize the solution length (player-to-key plus key-to-door)"
-        )
-        path_instruction = "3. Then optimize for longer solution paths"
+        path_goal = path_instruction = None
 
     enemy_cfg = config.targets.enemies
     if enemy_cfg and enemy_cfg.mode == "target" and enemy_cfg.value is not None:
-        enemy_goal = f"5. Have exactly {enemy_cfg.value} enemies (E)"
+        enemy_goal = f"Have exactly {enemy_cfg.value} enemies (E)"
     else:
-        enemy_goal = "5. Use enemies (E) according to the configured objective"
+        enemy_goal = "Use enemies (E) according to the configured objective"
     return path_goal, path_instruction, enemy_goal
+
+
+def _numbered(lines: list[str | None]) -> str:
+    return "\n".join(f"{i}. {line}" for i, line in enumerate((l for l in lines if l), start=1))
 
 
 def _openai_sampling_seed(config: Config) -> int | None:
@@ -1192,12 +1202,21 @@ Respond with ONLY the JSON object, no additional text."""
 ## {score_str}
 """
 
+        goals_block = _numbered([
+            "Have exactly 1 player (P), 1 key (K), and 1 door (D)",
+            "Ensure the level is playable: player can reach key, key can reach door",
+            path_goal,
+            "Maintain exactly 1 connected region",
+            enemy_goal,
+        ])
+        instructions_block = _numbered([
+            "First ensure the level has exactly 1 player, 1 key, and 1 door",
+            "Ensure paths exist: player->key and key->door must be reachable",
+            path_instruction,
+            "Match the configured enemy count without blocking critical paths",
+        ])
         prompt = f"""You are an AI agent optimizing a Zelda dungeon level. Your goals are:
-1. Have exactly 1 player (P), 1 key (K), and 1 door (D)
-2. Ensure the level is playable: player can reach key, key can reach door
-{path_goal}
-4. Maintain exactly 1 connected region
-{enemy_goal}
+{goals_block}
 
 ## Current Level (rows are y, columns are x, 0-indexed):
 ```
@@ -1212,10 +1231,7 @@ Respond with ONLY the JSON object, no additional text."""
 ## {tools_str}
 
 ## Instructions:
-1. First ensure the level has exactly 1 player, 1 key, and 1 door
-2. Ensure paths exist: player->key and key->door must be reachable
-{path_instruction}
-4. Match the configured enemy count without blocking critical paths
+{instructions_block}
 
 ## Response Format:
 Respond with a JSON object of one of these types:
@@ -1278,12 +1294,21 @@ Respond with ONLY the JSON object, no additional text."""
             "construction; do not emit a different message type."
         )
 
+        goals_block = _numbered([
+            "Have exactly 1 player (P), 1 key (K), and 1 door (D)",
+            "Ensure the level is playable: player can reach key, key can reach door",
+            path_goal,
+            "Maintain exactly 1 connected region",
+            enemy_goal,
+        ])
+        instructions_block = _numbered([
+            "First ensure the level has exactly 1 player, 1 key, and 1 door",
+            "Ensure paths exist: player->key and key->door must be reachable",
+            path_instruction,
+            "Match the configured enemy count without blocking critical paths",
+        ])
         prompt = f"""You are an AI agent optimizing a Zelda dungeon level. Your goals are:
-1. Have exactly 1 player (P), 1 key (K), and 1 door (D)
-2. Ensure the level is playable: player can reach key, key can reach door
-{path_goal}
-4. Maintain exactly 1 connected region
-{enemy_goal}
+{goals_block}
 
 ## Current Level (rows are y, columns are x, 0-indexed):
 ```
@@ -1298,10 +1323,7 @@ Respond with ONLY the JSON object, no additional text."""
 ## {tools_str}
 
 ## Instructions:
-1. First ensure the level has exactly 1 player, 1 key, and 1 door
-2. Ensure paths exist: player->key and key->door must be reachable
-{path_instruction}
-4. Match the configured enemy count without blocking critical paths
+{instructions_block}
 
 ## Response Format:
 Respond with a JSON object of one of these types:

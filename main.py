@@ -5,6 +5,8 @@ For multi-trial experiments, use run_experiment.py instead.
 """
 
 import argparse
+import json
+import os
 import sys
 from pathlib import Path
 
@@ -294,7 +296,15 @@ def main():
         help="Step to resume from (default: last step). Requires --resume-from",
     )
 
+    metric_input = parser.add_mutually_exclusive_group()
+    metric_input.add_argument("--request", help="Natural-language metric targets for the configured game")
+    metric_input.add_argument("--request-spec", type=Path, help="Metric-request JSON file (no parser call)")
+    parser.add_argument("--request-dry-run", action="store_true", help="Print resolved targets and exit before generation")
     args = parser.parse_args()
+    if args.request_dry_run and not (args.request or args.request_spec):
+        parser.error("--request-dry-run requires --request or --request-spec")
+    if (args.request or args.request_spec) and (args.target or args.resume_from):
+        parser.error("Metric requests cannot be combined with --target or --resume-from")
 
     # Validate resume args
     if args.resume_step is not None and args.resume_from is None:
@@ -429,6 +439,31 @@ def main():
             print(f"Error loading config: {e}")
             return 1
 
+    metric_request_payload = None
+    if args.request or args.request_spec:
+        from toolusepcg.metric_input import apply_metric_request, parse_metric_request
+        from toolusepcg.config import config_to_dict
+        try:
+            if args.request_spec:
+                metric_request_payload = json.loads(args.request_spec.read_text())
+                config = apply_metric_request(config, metric_request_payload)
+            else:
+                if config.llm.provider != "openai":
+                    raise ValueError("--request uses an OpenAI-compatible endpoint; use --provider openai or --request-spec")
+                from openai import OpenAI
+                with OpenAI(base_url=config.llm.base_url,
+                            api_key=config.llm.api_key or os.environ.get("OPENAI_API_KEY") or "EMPTY",
+                            max_retries=0, timeout=120.0) as client:
+                    config, metric_request_payload = parse_metric_request(args.request, config, client)
+            print(json.dumps({"metric_request": metric_request_payload,
+                              "resolved_targets": config_to_dict(config)["targets"]},
+                             ensure_ascii=False, indent=2))
+        except Exception as exc:
+            print(f"Error resolving metric request: {exc}", file=sys.stderr)
+            return 1
+        if args.request_dry_run:
+            return 0
+
     # Use seed from config if not specified on command line
     seed = args.seed if args.seed is not None else config.seed
 
@@ -437,6 +472,9 @@ def main():
     runtime_args = {
         "max_steps": args.max_steps,
     }
+    if metric_request_payload is not None:
+        runtime_args["metric_request"] = metric_request_payload
+        runtime_args["metric_request_text"] = args.request
     if args.config:
         runtime_args["config_path"] = args.config
     if args.verbose and not args.quiet:
