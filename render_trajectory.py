@@ -72,8 +72,7 @@ def _load_sprites():
     """Load Mario and enemy sprites from the SMB tile images directory."""
     smbtile_dir = (
         Path(__file__).resolve().parent
-        / "submodules"
-        / "pcg_benchmark"
+        / "vendor"
         / "pcg_benchmark"
         / "probs"
         / "smbtile"
