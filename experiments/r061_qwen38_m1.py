@@ -1295,6 +1295,16 @@ def _hard_validity(metrics: dict[str, Any], *, parser_errors: int, tool_errors: 
     return checks
 
 
+EPISODE_CHECKS = frozenset({"protocol_clean", "tool_clean", "hard_valid"})
+
+
+def final_map_perfect(record: Mapping[str, Any]) -> bool:
+    """Perfect match judged on the final saved map; episode errors are ignored."""
+    hard = record["hard_constraints"]
+    map_valid = all(value for key, value in hard.items() if key not in EPISODE_CHECKS)
+    return bool(map_valid and int(record["e_inf"]) == 0)
+
+
 def _reasoning_action_traces(optimizer: GreedyOptimizer) -> list[dict[str, Any]]:
     """Keep only the evidence needed to diagnose reasoning -> action -> effect."""
     traces = []
@@ -1505,6 +1515,7 @@ def _matched_arm_aggregate(records: list[dict[str, Any]]) -> dict[str, Any]:
         "completed_cases": sum(row["status"] == "complete" for row in records),
         "hard_valid": sum(row["hard_constraints"]["hard_valid"] for row in records),
         "exact": sum(row["exact"] for row in records),
+        "final_map_perfect": sum(final_map_perfect(row) for row in records),
         "candidate_exact_ever": sum(
             bool(row.get("candidate_exact_ever")) for row in records
         ),

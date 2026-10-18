@@ -30,7 +30,7 @@ The default model is `qwen38`. `--model qwen36` selects the registered FP8 model
 | `zelda-test` | All 721 fixed test targets, full harness | `full.json` |
 | `binarydoor` | 32 targets with the registered h0 and h3 conditions | `h0.json`, `h3.json` |
 
-Zelda's supported target range is 10–40 for each of player→key and key→door distance. A valid level also has exactly one player, key and door, three enemies, one connected passable region, and reachable required paths. A perfect match requires validity **and** both requested distances. The oracle establishes feasibility; it is not a model baseline with inference costs.
+Zelda's supported target range is 10–40 for each of player→key and key→door distance. A valid level also has exactly one player, key and door, three enemies, one connected passable region, and reachable required paths. A run is a perfect match when its final saved level is valid **and** matches both requested distances. The record's `exact` field is stricter: it also requires no unrecovered parse or tool errors during the episode. The paper reports this error-free count only as a secondary measure. The oracle establishes feasibility; it is not a model baseline with inference costs.
 
 Z64 IDs are listed in `configs/paper_m2_z64_target_ids.txt`. Per-case seeds and initialization hashes come from `benchmarks/zelda/test721.json`. The validation materializer uses seeds `64120 + index`. Both arms of a paired comparison use the same IDs, maps and request seeds.
 
@@ -45,7 +45,7 @@ python -m experiments.paired_stats \
   --output runs/z64-qwen38/paired_statistics.json
 ```
 
-This computes the difference in exact-success rate, 200,000 paired bootstrap resamples with seed `20260831`, and a two-sided exact McNemar test. IDs, targets, seeds and initialization hashes must match; missing observations and duplicate IDs are rejected. Confirm the reported pair count is 64 for Z64. Gemma retains its original model-specific completeness and paired analysis in `experiments/gemma4_z64_hpc.py`.
+This computes the difference in perfect-match rate on the final saved levels (add `--metric error_free` for the stricter `exact` field), 200,000 paired bootstrap resamples with seed `20260831`, and a two-sided exact McNemar test. IDs, targets, seeds and initialization hashes must match; missing observations and duplicate IDs are rejected. Confirm the reported pair count is 64 for Z64. Gemma retains its original model-specific completeness and paired analysis in `experiments/gemma4_z64_hpc.py`; its summary reports the final-map result under `paired_final_map` and the error-free result under `paired_exact`.
 
 For a smaller Gemma qualification run, use `pcg-reproduce gemma4 --gemma-mode dev --output runs/gemma-dev`. The eight development IDs are separate from the formal 64-target comparison.
 

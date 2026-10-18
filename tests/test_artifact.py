@@ -73,7 +73,9 @@ def test_paired_statistics_reject_missing_observations_and_check_direction(tmp_p
              "initialization_sha256": "same-initial", "exact": False} for i in range(4)]
     left.write_text(json.dumps({"records": rows}))
     right.write_text(json.dumps({"records": [dict(r, exact=True) for r in rows]}))
-    result = compare(left, right)
+    with pytest.raises(ValueError, match='final-map'):
+        compare(left, right)
+    result = compare(left, right, metric='error_free')
     assert result['difference_percentage_points'] == 100
     assert result['paired_bootstrap_95_percent_interval'] == [100, 100]
     assert result['mcnemar_two_sided_exact_p'] == 0.125

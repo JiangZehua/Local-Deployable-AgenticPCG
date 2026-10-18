@@ -317,6 +317,7 @@ def compact_episode(
         "attempt_id": attempt_id,
         "status": episode_status(record),
         "exact": bool(record["exact"]),
+        "final_map_perfect": producer.final_map_perfect(record),
         "hard_valid": bool(record["hard_constraints"]["hard_valid"]),
         "target_player_key": int(record["target"]["player_key"]),
         "target_key_door": int(record["target"]["key_door"]),
@@ -369,6 +370,7 @@ def placeholder_episode(
         "attempt_id": attempt_id,
         "status": status,
         "exact": False if failed_in_denominator else None,
+        "final_map_perfect": False if failed_in_denominator else None,
         "hard_valid": False if failed_in_denominator else None,
         "target_player_key": None,
         "target_key_door": None,
@@ -678,6 +680,24 @@ def summary_for(rows: list[dict[str, Any]], protocol: dict[str, Any]) -> tuple[d
         n=int(analysis_cfg["bootstrap_resamples"]),
         seed=int(analysis_cfg["bootstrap_seed"]),
     )
+    # Primary paper metric: score the final saved map, ignoring episode errors.
+    map_differences = [
+        float(int(bool(v["final_map_perfect"])) - int(bool(o["final_map_perfect"])))
+        for o, v in (
+            (by_arm_target.get(("open_loop", t)), by_arm_target.get(("verified", t)))
+            for t in targets
+        )
+        if o is not None and v is not None
+        and o.get("final_map_perfect") is not None
+        and v.get("final_map_perfect") is not None
+    ]
+    map_ci = paired_bootstrap(
+        map_differences,
+        n=int(analysis_cfg["bootstrap_resamples"]),
+        seed=int(analysis_cfg["bootstrap_seed"]),
+    )
+    map_wins = sum(value == 1 for value in map_differences)
+    map_losses = sum(value == -1 for value in map_differences)
     arm_summary = {}
     for arm in ("open_loop", "verified"):
         arm_rows = [row for row in rows if row["arm"] == arm]
@@ -713,6 +733,9 @@ def summary_for(rows: list[dict[str, Any]], protocol: dict[str, Any]) -> tuple[d
             ),
             "not_started": sum(row["status"] == "not_started" for row in arm_rows),
             "exact_count": sum(row["exact"] is True for row in arm_rows),
+            "final_map_perfect_count": sum(
+                row.get("final_map_perfect") is True for row in arm_rows
+            ),
             "exact_rate_full_denominator": (
                 sum(row["exact"] is True for row in arm_rows) / denominator
                 if denominator and missing_count == 0
@@ -780,6 +803,18 @@ def summary_for(rows: list[dict[str, Any]], protocol: dict[str, Any]) -> tuple[d
             "common_success": common_success,
             "common_failure": common_failure,
             "mcnemar_exact_two_sided_p": exact_mcnemar(verified_only, open_only),
+        },
+        "paired_final_map": {
+            "pairs": len(map_differences),
+            "difference_percentage_points": (
+                100.0 * statistics.fmean(map_differences) if map_differences else None
+            ),
+            "bootstrap_95_ci_percentage_points": [
+                100.0 * value if value is not None else None for value in map_ci
+            ],
+            "verified_only": map_wins,
+            "open_loop_only": map_losses,
+            "mcnemar_exact_two_sided_p": exact_mcnemar(map_wins, map_losses),
         },
         "failure_categories": {
             category: sum(row["failure_category"] == category for row in rows)
@@ -999,12 +1034,14 @@ def write_readout(
         "",
         "## 5. Main results",
         "",
-        "| Arm | Exact | Hard-valid |",
-        "|---|---:|---:|",
-        f"| Open-loop | {open_summary['exact_count']}/{open_summary['scored_denominator']} ({fmt_rate(open_summary['exact_rate_scored'])}) | {open_summary['hard_valid_count']}/{open_summary['scored_denominator']} ({fmt_rate(open_summary['hard_valid_rate_scored'])}) |",
-        f"| Verified | {verified_summary['exact_count']}/{verified_summary['scored_denominator']} ({fmt_rate(verified_summary['exact_rate_scored'])}) | {verified_summary['hard_valid_count']}/{verified_summary['scored_denominator']} ({fmt_rate(verified_summary['hard_valid_rate_scored'])}) |",
+        "| Arm | Final-map perfect | Error-free exact | Hard-valid |",
+        "|---|---:|---:|---:|",
+        f"| Open-loop | {open_summary['final_map_perfect_count']}/{open_summary['scored_denominator']} | {open_summary['exact_count']}/{open_summary['scored_denominator']} ({fmt_rate(open_summary['exact_rate_scored'])}) | {open_summary['hard_valid_count']}/{open_summary['scored_denominator']} ({fmt_rate(open_summary['hard_valid_rate_scored'])}) |",
+        f"| Verified | {verified_summary['final_map_perfect_count']}/{verified_summary['scored_denominator']} | {verified_summary['exact_count']}/{verified_summary['scored_denominator']} ({fmt_rate(verified_summary['exact_rate_scored'])}) | {verified_summary['hard_valid_count']}/{verified_summary['scored_denominator']} ({fmt_rate(verified_summary['hard_valid_rate_scored'])}) |",
         "",
-        f"Verified-only {paired['verified_only']}; Open-loop-only {paired['open_loop_only']}; common success {paired['common_success']}; common failure {paired['common_failure']}.",
+        f"Final-map perfect match (primary): Verified minus Open-loop {summary['paired_final_map']['difference_percentage_points']} percentage points; paired bootstrap 95% CI {summary['paired_final_map']['bootstrap_95_ci_percentage_points']}; Verified-only {summary['paired_final_map']['verified_only']}, Open-loop-only {summary['paired_final_map']['open_loop_only']}.",
+        "",
+        f"Error-free exact: Verified-only {paired['verified_only']}; Open-loop-only {paired['open_loop_only']}; common success {paired['common_success']}; common failure {paired['common_failure']}.",
         "",
         "## 6. Paired inference",
         "",
